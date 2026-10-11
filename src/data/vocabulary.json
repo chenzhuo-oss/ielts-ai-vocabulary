@@ -1,0 +1,3968 @@
+{
+  "id": "ielts_core_v1",
+  "name": "IELTS Core Vocabulary",
+  "words": [
+    {
+      "id": "word_001",
+      "word": "significant",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "重要的；显著的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "significant increase",
+          "translation": "显著增长"
+        },
+        {
+          "text": "significant impact",
+          "translation": "重大影响"
+        },
+        {
+          "text": "significant difference",
+          "translation": "显著差异"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Bond doesn't believe there is a significant difference between elite sports people and the rest of us.",
+          "translation": "邦德认为，顶尖运动员和我们其他人之间并没有显著差异。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "crucial",
+        "pivotal",
+        "vital"
+      ]
+    },
+    {
+      "id": "word_002",
+      "word": "crucial",
+      "phonetic": "/ˈkruːʃəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "至关重要的；关键的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "crucial role",
+          "translation": "关键作用"
+        },
+        {
+          "text": "crucial factor",
+          "translation": "关键因素"
+        },
+        {
+          "text": "crucial decision",
+          "translation": "关键决定"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "In one crucial respect, Harkness argues, many of the 16th-century London scientists differed from the later ones of the 17th century.",
+          "translation": "哈克尼斯认为，在一个关键方面，许多16世纪的伦敦科学家与后来17世纪的科学家有所不同。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "significant",
+        "pivotal",
+        "vital"
+      ]
+    },
+    {
+      "id": "word_003",
+      "word": "pivotal",
+      "phonetic": "/ˈpɪvətəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "关键的；核心的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "pivotal role",
+          "translation": "关键作用"
+        },
+        {
+          "text": "pivotal moment",
+          "translation": "关键时刻"
+        },
+        {
+          "text": "pivotal factor",
+          "translation": "关键因素"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Although it received little acclaim at the time, in hindsight The Birth of Cool has become recognised as a pivotal moment in jazz history.",
+          "translation": "尽管《冷爵士的诞生》当时并未获得多少赞誉，但回顾起来，它已被视为爵士乐历史上的关键时刻。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "significant",
+        "crucial",
+        "vital"
+      ]
+    },
+    {
+      "id": "word_004",
+      "word": "vital",
+      "phonetic": "/ˈvaɪtəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "至关重要的；必不可少的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "vital role",
+          "translation": "重要作用"
+        },
+        {
+          "text": "of vital importance",
+          "translation": "至关重要"
+        },
+        {
+          "text": "vital task",
+          "translation": "重要任务"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "They're not usually associated with fashion but let me tell you, they perform a vital task.",
+          "translation": "人们通常不会把他们与时尚联系起来，但我要告诉你，他们承担着一项至关重要的任务。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "significant",
+        "crucial",
+        "pivotal"
+      ]
+    },
+    {
+      "id": "word_005",
+      "word": "primary",
+      "phonetic": "/ˈpraɪməri/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "主要的；首要的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "primary concern",
+          "translation": "首要关注点"
+        },
+        {
+          "text": "primary objective",
+          "translation": "主要目标"
+        },
+        {
+          "text": "primary source",
+          "translation": "一手资料"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The primary focus is on clear communication, precise vocabulary use, and grammatical range and accuracy.",
+          "translation": "主要关注点是清晰沟通、准确用词以及语法范围和准确性。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "principal",
+        "predominant",
+        "central"
+      ]
+    },
+    {
+      "id": "word_006",
+      "word": "principal",
+      "phonetic": "/ˈprɪnsəpəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "主要的；最重要的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "principal reason",
+          "translation": "主要原因"
+        },
+        {
+          "text": "principal factor",
+          "translation": "主要因素"
+        },
+        {
+          "text": "principal aim",
+          "translation": "主要目标"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "His other principal research interests include Chinese and Japanese educational contexts, academic writing for overseas learning, test preparation, pedagogy, diagnostic assessment and lexical studies.",
+          "translation": "他的其他主要研究兴趣包括中日教育语境、海外学习学术写作、备考、教学法、诊断性评估和词汇研究。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "primary",
+        "predominant",
+        "central"
+      ]
+    },
+    {
+      "id": "word_007",
+      "word": "predominant",
+      "phonetic": "/prɪˈdɒmɪnənt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "占主导地位的；最显著的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "predominant role",
+          "translation": "主导作用"
+        },
+        {
+          "text": "predominant factor",
+          "translation": "主导因素"
+        },
+        {
+          "text": "predominant feature",
+          "translation": "主要特征"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This part of the study found that the IELTS tasks bear some resemblance to the predominant genre of university study - the essay.",
+          "translation": "研究的这一部分发现，雅思任务与大学学习中占主导地位的文体——论文——有一定相似之处。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "primary",
+        "principal",
+        "central"
+      ]
+    },
+    {
+      "id": "word_008",
+      "word": "central",
+      "phonetic": "/ˈsentrəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "核心的；主要的"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "adj.",
+          "definitionZh": "位于中心的；市中心的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "central role",
+          "translation": "核心作用"
+        },
+        {
+          "text": "central issue",
+          "translation": "核心问题"
+        },
+        {
+          "text": "central theme",
+          "translation": "中心主题"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "For more than two decades, IELTS has played a central role in enabling skilled migration and supporting Australia’s international education sector by providing a secure and trusted measure of English proficiency.",
+          "translation": "二十多年来，雅思在促进技术移民和支持澳大利亚国际教育领域方面发挥着核心作用，为英语水平提供了安全且可信的衡量方式。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        },
+        {
+          "text": "Well, there are two central hotels in the range you're looking for – there's Carlton House and The Imperial.",
+          "translation": "嗯，在你所考虑的价位范围内有两家市中心酒店——卡尔顿酒店和帝国酒店。",
+          "source": "British Council",
+          "meaningId": "meaning_02"
+        }
+      ],
+      "synonyms": [
+        "primary",
+        "principal",
+        "predominant"
+      ]
+    },
+    {
+      "id": "word_009",
+      "word": "increase",
+      "phonetic": "/ɪnˈkriːs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "增加；增长"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "n.",
+          "definitionZh": "增加；增长；上升"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "significant increase",
+          "translation": "显著增长"
+        },
+        {
+          "text": "sharp increase",
+          "translation": "急剧增长"
+        },
+        {
+          "text": "increase in demand",
+          "translation": "需求增长"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The campaigners point out that there has been no sudden increase in litigation as a consequence of the increase in plain English materials.",
+          "translation": "倡导者指出，随着简明英语材料的增加，诉讼并未突然增多。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_02"
+        }
+      ],
+      "synonyms": [
+        "escalate",
+        "surge",
+        "expand"
+      ]
+    },
+    {
+      "id": "word_010",
+      "word": "escalate",
+      "phonetic": "/ˈeskəleɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "（使）升级；加剧"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "v.",
+          "definitionZh": "上报；升级处理"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "escalate tensions",
+          "translation": "加剧紧张局势"
+        },
+        {
+          "text": "escalate into conflict",
+          "translation": "升级为冲突"
+        },
+        {
+          "text": "rapidly escalate",
+          "translation": "迅速升级"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Sadly, the situation has drastically changed since the violence escalated in late 2012.",
+          "translation": "遗憾的是，自2012年底暴力活动加剧以来，局势发生了巨大变化。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        },
+        {
+          "text": "We help test takers and other stakeholders to escalate concerns about actual, suspected or anticipated wrongdoing within the IELTS Test Partners.",
+          "translation": "我们帮助考生及其他相关方上报雅思考试合作机构内实际、疑似或预期的不当行为。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_02"
+        }
+      ],
+      "synonyms": [
+        "increase",
+        "surge",
+        "expand"
+      ]
+    },
+    {
+      "id": "word_011",
+      "word": "surge",
+      "phonetic": "/sɜːdʒ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "激增；猛增"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "v.",
+          "definitionZh": "激增；猛增"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "surge in demand",
+          "translation": "需求激增"
+        },
+        {
+          "text": "surge in prices",
+          "translation": "价格飙升"
+        },
+        {
+          "text": "sudden surge",
+          "translation": "突然激增"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This was perhaps never more evident than during the surge of Covid-19 cases in early 2020.",
+          "translation": "这一点在2020年初新冠病例激增期间表现得尤为明显。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "increase",
+        "escalate",
+        "expand"
+      ]
+    },
+    {
+      "id": "word_012",
+      "word": "expand",
+      "phonetic": "/ɪkˈspænd/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "扩大；扩展"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "expand access",
+          "translation": "扩大获取机会"
+        },
+        {
+          "text": "expand rapidly",
+          "translation": "迅速扩张"
+        },
+        {
+          "text": "expand the economy",
+          "translation": "扩大经济规模"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "But how can you expand your vocabulary for IELTS Speaking through contextual learning, if you don’t live in an English-speaking country?",
+          "translation": "但是，如果你不住在英语国家，如何通过情境学习来扩大雅思口语词汇量呢？",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "increase",
+        "escalate",
+        "surge"
+      ]
+    },
+    {
+      "id": "word_013",
+      "word": "decline",
+      "phonetic": "/dɪˈklaɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "下降；衰退"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "v.",
+          "definitionZh": "下降；衰退"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "decline sharply",
+          "translation": "急剧下降"
+        },
+        {
+          "text": "steady decline",
+          "translation": "稳步下降"
+        },
+        {
+          "text": "decline in population",
+          "translation": "人口下降"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The decline on this dimension between the first and second tests may reflect a risk factor in intensive, full-time Masters programs.",
+          "translation": "第一次和第二次测试之间这一维度的下降，可能反映出全日制硕士密集课程中的一个风险因素。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "diminish",
+        "decrease",
+        "shrink"
+      ]
+    },
+    {
+      "id": "word_014",
+      "word": "diminish",
+      "phonetic": "/dɪˈmɪnɪʃ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "减少；减弱"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "diminish the impact",
+          "translation": "减弱影响"
+        },
+        {
+          "text": "diminish in importance",
+          "translation": "重要性下降"
+        },
+        {
+          "text": "gradually diminish",
+          "translation": "逐渐减少"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "For this reason, the validity of a score as a precise representation of a candidate’s abilities will inevitably diminish in time.",
+          "translation": "因此，分数作为考生能力精确体现的有效性将不可避免地随时间减弱。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "decline",
+        "decrease",
+        "shrink"
+      ]
+    },
+    {
+      "id": "word_015",
+      "word": "decrease",
+      "phonetic": "/dɪˈkriːs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "减少；下降"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "n.",
+          "definitionZh": "减少；下降"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "decrease significantly",
+          "translation": "显著减少"
+        },
+        {
+          "text": "decrease in demand",
+          "translation": "需求下降"
+        },
+        {
+          "text": "sharp decrease",
+          "translation": "急剧下降"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "When people get distracted, both their accuracy and their task response times significantly decrease.",
+          "translation": "当人们分心时，他们的准确性和任务反应速度都会显著下降。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        },
+        {
+          "text": "MLM results indicated that there was a significant decrease in the number of errors (by 1.03 errors per 100 words, on average) on each succeeding test occasion.",
+          "translation": "多层线性模型结果表明，在随后每次考试中，错误数量均显著减少（平均每100词减少1.03个错误）。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_02"
+        }
+      ],
+      "synonyms": [
+        "decline",
+        "diminish",
+        "shrink"
+      ]
+    },
+    {
+      "id": "word_016",
+      "word": "shrink",
+      "phonetic": "/ʃrɪŋk/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "缩小；减少"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "shrink in size",
+          "translation": "尺寸缩小"
+        },
+        {
+          "text": "shrink rapidly",
+          "translation": "迅速缩小"
+        },
+        {
+          "text": "shrinking population",
+          "translation": "人口减少"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Rather than the skin getting bigger, fingertips actually shrink when they wrinkle, because the blood vessels inside them contract.",
+          "translation": "指尖起皱时并不是皮肤变大，而是由于内部血管收缩，指尖实际上会缩小。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "decline",
+        "diminish",
+        "decrease"
+      ]
+    },
+    {
+      "id": "word_017",
+      "word": "alter",
+      "phonetic": "/ˈɔːltə(r)/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "改变；更改"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "alter the outcome",
+          "translation": "改变结果"
+        },
+        {
+          "text": "alter significantly",
+          "translation": "显著改变"
+        },
+        {
+          "text": "alter perceptions",
+          "translation": "改变看法"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Sensors switch everything on when the sun rises, and alter flows of air and seawater through the day in response to changes in temperature, humidity and sunlight.",
+          "translation": "太阳升起时，传感器会启动所有设备，并根据温度、湿度和阳光的变化，全天调节空气和海水的流动。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "modify",
+        "transform",
+        "shift"
+      ]
+    },
+    {
+      "id": "word_018",
+      "word": "modify",
+      "phonetic": "/ˈmɒdɪfaɪ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "修改；调整"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "v.",
+          "definitionZh": "修饰；限定"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "modify an approach",
+          "translation": "调整方法"
+        },
+        {
+          "text": "modify behaviour",
+          "translation": "改变行为"
+        },
+        {
+          "text": "slightly modify",
+          "translation": "稍作修改"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Hoa (associate professor) said she was very motivated to constantly modify her teaching approach and stay current with changes to the IELTS test structure to make sure her teaching effectiveness was high as reflected by her students’ IELTS scores.",
+          "translation": "Hoa（副教授）表示，她非常积极地不断调整自己的教学方法，并紧跟雅思考试结构的变化，以确保学生的雅思成绩能够反映出较高的教学成效。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        },
+        {
+          "text": "We can also modify comparisons to show big or small differences.",
+          "translation": "我们也可以修饰比较结构，以表示较大或较小的差异。",
+          "source": "British Council",
+          "meaningId": "meaning_02"
+        }
+      ],
+      "synonyms": [
+        "alter",
+        "transform",
+        "shift"
+      ]
+    },
+    {
+      "id": "word_019",
+      "word": "transform",
+      "phonetic": "/trænsˈfɔːm/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "使转变；使彻底改变"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "transform society",
+          "translation": "改变社会"
+        },
+        {
+          "text": "transform into",
+          "translation": "转变为"
+        },
+        {
+          "text": "radically transform",
+          "translation": "彻底改变"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "So what happened here in London to transform the son of a glove maker into one of the world’s greatest writers?",
+          "translation": "那么，伦敦发生了什么，使一个手套匠的儿子转变为世界上最伟大的作家之一？",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "alter",
+        "modify",
+        "shift"
+      ]
+    },
+    {
+      "id": "word_020",
+      "word": "shift",
+      "phonetic": "/ʃɪft/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "转变；变化"
+        },
+        {
+          "id": "meaning_02",
+          "partOfSpeech": "v.",
+          "definitionZh": "转移；转变"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "shift attention",
+          "translation": "转移注意力"
+        },
+        {
+          "text": "shift the focus",
+          "translation": "转移重点"
+        },
+        {
+          "text": "significant shift",
+          "translation": "重大转变"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "With this shift in focus, the skills required of future workers are also bound to change.",
+          "translation": "随着关注重点的这一转变，未来工作者所需的技能也必然会发生变化。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "alter",
+        "modify",
+        "transform"
+      ]
+    },
+    {
+      "id": "word_021",
+      "word": "indicate",
+      "phonetic": "/ˈɪndɪkeɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "表明；显示"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "indicate a trend",
+          "translation": "表明趋势"
+        },
+        {
+          "text": "clearly indicate",
+          "translation": "清楚表明"
+        },
+        {
+          "text": "indicate that",
+          "translation": "表明……"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The Test Report Form will indicate if you have completed your test online.",
+          "translation": "成绩单会注明你是否在线完成了考试。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "demonstrate",
+        "illustrate",
+        "reveal"
+      ]
+    },
+    {
+      "id": "word_022",
+      "word": "demonstrate",
+      "phonetic": "/ˈdemənstreɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "证明；表明"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "demonstrate ability",
+          "translation": "展示能力"
+        },
+        {
+          "text": "demonstrate the importance of",
+          "translation": "说明……的重要性"
+        },
+        {
+          "text": "clearly demonstrate",
+          "translation": "清楚表明"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This means that by preparing for and taking the IELTS test your applicants demonstrate their English proficiency skills, and their ability to apply those skills in an academic context.",
+          "translation": "这意味着，申请者通过备考和参加雅思考试，能够证明其英语水平以及在学术环境中运用这些技能的能力。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "indicate",
+        "illustrate",
+        "reveal"
+      ]
+    },
+    {
+      "id": "word_023",
+      "word": "illustrate",
+      "phonetic": "/ˈɪləstreɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "说明；阐明"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "illustrate a point",
+          "translation": "说明观点"
+        },
+        {
+          "text": "illustrate the importance of",
+          "translation": "说明……的重要性"
+        },
+        {
+          "text": "clearly illustrate",
+          "translation": "清楚说明"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This video includes the selecting and highlighting of key features as well as providing sufficient detail to illustrate these features.",
+          "translation": "该视频包括如何选择和突出关键特征，以及如何提供足够的细节来说明这些特征。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "indicate",
+        "demonstrate",
+        "reveal"
+      ]
+    },
+    {
+      "id": "word_024",
+      "word": "reveal",
+      "phonetic": "/rɪˈviːl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "揭示；显示"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "reveal the truth",
+          "translation": "揭示真相"
+        },
+        {
+          "text": "reveal a pattern",
+          "translation": "揭示规律"
+        },
+        {
+          "text": "clearly reveal",
+          "translation": "清楚揭示"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Even if two tests meet all these criteria, however, there are limits to what concordance tables can reveal about their scores.",
+          "translation": "然而，即使两项考试都符合所有这些标准，对照表能够揭示的分数信息仍然有限。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "indicate",
+        "demonstrate",
+        "illustrate"
+      ]
+    },
+    {
+      "id": "word_025",
+      "word": "issue",
+      "phonetic": "/ˈɪʃuː/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "问题；议题"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "address an issue",
+          "translation": "处理问题"
+        },
+        {
+          "text": "key issue",
+          "translation": "关键问题"
+        },
+        {
+          "text": "social issue",
+          "translation": "社会问题"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Once this issue was identified, we acted to rectify it, correcting results and supporting people.",
+          "translation": "一旦发现这一问题，我们便采取行动予以纠正，更正成绩并为相关人员提供支持。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "complication",
+        "difficulty",
+        "challenge"
+      ]
+    },
+    {
+      "id": "word_026",
+      "word": "complication",
+      "phonetic": "/ˌkɒmplɪˈkeɪʃən/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "复杂情况；难题"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "serious complication",
+          "translation": "严重并发症"
+        },
+        {
+          "text": "further complication",
+          "translation": "进一步的复杂情况"
+        },
+        {
+          "text": "cause complications",
+          "translation": "引起并发症"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "A further complication is that task difficulty is not a feature of the task itself but is affected by the interaction between test-takers and the task.",
+          "translation": "另一个复杂之处在于，任务难度并非任务本身固有的特征，而是受到考生与任务之间互动的影响。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "issue",
+        "difficulty",
+        "challenge"
+      ]
+    },
+    {
+      "id": "word_027",
+      "word": "difficulty",
+      "phonetic": "/ˈdɪfɪkəlti/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "困难；难题"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "face difficulty",
+          "translation": "面临困难"
+        },
+        {
+          "text": "have difficulty doing",
+          "translation": "做……有困难"
+        },
+        {
+          "text": "overcome difficulties",
+          "translation": "克服困难"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The test taker has great difficulty understanding spoken and written English.",
+          "translation": "该考生在理解英语口语和书面语方面有很大困难。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "issue",
+        "complication",
+        "challenge"
+      ]
+    },
+    {
+      "id": "word_028",
+      "word": "challenge",
+      "phonetic": "/ˈtʃælɪndʒ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "挑战；难题"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "face a challenge",
+          "translation": "面临挑战"
+        },
+        {
+          "text": "major challenge",
+          "translation": "重大挑战"
+        },
+        {
+          "text": "overcome a challenge",
+          "translation": "克服挑战"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The scale of the challenge globally should not be underestimated.",
+          "translation": "不应低估这一挑战在全球范围内的规模。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "issue",
+        "complication",
+        "difficulty"
+      ]
+    },
+    {
+      "id": "word_029",
+      "word": "approach",
+      "phonetic": "/əˈprəʊtʃ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "方法；途径"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "adopt an approach",
+          "translation": "采用方法"
+        },
+        {
+          "text": "practical approach",
+          "translation": "实用方法"
+        },
+        {
+          "text": "alternative approach",
+          "translation": "替代方法"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Civil engineers favour a practical approach to problems and believe traffic congestion is the result of poor road construction.",
+          "translation": "土木工程师倾向于采用务实的方法解决问题，并认为交通拥堵是道路建设不佳造成的。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "strategy",
+        "technique",
+        "methodology"
+      ]
+    },
+    {
+      "id": "word_030",
+      "word": "strategy",
+      "phonetic": "/ˈstrætədʒi/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "策略；规划"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "develop a strategy",
+          "translation": "制定策略"
+        },
+        {
+          "text": "effective strategy",
+          "translation": "有效策略"
+        },
+        {
+          "text": "long-term strategy",
+          "translation": "长期策略"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "With this strategy, test takers have a clear framework which can be applied to any question thrown at them.",
+          "translation": "采用这一策略，考生便拥有一个可用于应对任何问题的清晰框架。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "approach",
+        "technique",
+        "methodology"
+      ]
+    },
+    {
+      "id": "word_031",
+      "word": "technique",
+      "phonetic": "/tekˈniːk/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "技巧；方法"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "effective technique",
+          "translation": "有效技巧"
+        },
+        {
+          "text": "employ a technique",
+          "translation": "运用技巧"
+        },
+        {
+          "text": "teaching technique",
+          "translation": "教学技巧"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Quantitative data analysis techniques including Rasch Item Response Theory, Pearson Product-Moment correlations, t-tests, analysis of variance, and structural equation modelling were used.",
+          "translation": "研究采用了多种定量数据分析方法，包括拉施项目反应理论、皮尔逊积矩相关、t 检验、方差分析和结构方程模型。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "approach",
+        "strategy",
+        "methodology"
+      ]
+    },
+    {
+      "id": "word_032",
+      "word": "methodology",
+      "phonetic": "/ˌmeθəˈdɒlədʒi/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "方法论；研究方法"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "research methodology",
+          "translation": "研究方法论"
+        },
+        {
+          "text": "adopt a methodology",
+          "translation": "采用方法论"
+        },
+        {
+          "text": "rigorous methodology",
+          "translation": "严谨的方法论"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This report examined the teaching methodology used in IELTS preparation classes in China.",
+          "translation": "这份报告考察了中国雅思备考课程中采用的教学方法。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "approach",
+        "strategy",
+        "technique"
+      ]
+    },
+    {
+      "id": "word_033",
+      "word": "advantage",
+      "phonetic": "/ədˈvɑːntɪdʒ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "优势；有利条件"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "major advantage",
+          "translation": "主要优势"
+        },
+        {
+          "text": "competitive advantage",
+          "translation": "竞争优势"
+        },
+        {
+          "text": "distinct advantage",
+          "translation": "明显优势"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The OET has an advantage in the area of health care in that it is content-specific for a number of professions.",
+          "translation": "职业英语考试在医疗领域具有一项优势，即其内容针对多个具体职业。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "benefit",
+        "merit",
+        "strength"
+      ]
+    },
+    {
+      "id": "word_034",
+      "word": "benefit",
+      "phonetic": "/ˈbenɪfɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "益处；好处"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "significant benefit",
+          "translation": "显著益处"
+        },
+        {
+          "text": "mutual benefit",
+          "translation": "共同利益"
+        },
+        {
+          "text": "bring benefits",
+          "translation": "带来益处"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "International tourism has brought enormous benefit to many places.",
+          "translation": "国际旅游业为许多地方带来了巨大益处。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "advantage",
+        "merit",
+        "strength"
+      ]
+    },
+    {
+      "id": "word_035",
+      "word": "merit",
+      "phonetic": "/ˈmerɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "优点；价值"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "considerable merit",
+          "translation": "相当大的价值"
+        },
+        {
+          "text": "relative merits",
+          "translation": "各自的优点"
+        },
+        {
+          "text": "have merit",
+          "translation": "有可取之处"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "There are no quotas, so everyone is judged on their own merits – no matter where in the world they are taking the test.",
+          "translation": "考试不设配额，因此无论考生在世界何处参加考试，每个人都凭自身表现接受评判。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "advantage",
+        "benefit",
+        "strength"
+      ]
+    },
+    {
+      "id": "word_036",
+      "word": "strength",
+      "phonetic": "/streŋθ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "优势；长处"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "key strength",
+          "translation": "关键优势"
+        },
+        {
+          "text": "major strength",
+          "translation": "主要优势"
+        },
+        {
+          "text": "strengths and weaknesses",
+          "translation": "优势与劣势"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The strength of such a multi-method approach is that it enables researchers to combine quantitative and qualitative analyses.",
+          "translation": "这种多方法研究路径的优势在于，它使研究人员能够结合定量分析与定性分析。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "advantage",
+        "benefit",
+        "merit"
+      ]
+    },
+    {
+      "id": "word_037",
+      "word": "drawback",
+      "phonetic": "/ˈdrɔːbæk/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "缺点；不利因素"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "major drawback",
+          "translation": "主要缺点"
+        },
+        {
+          "text": "potential drawback",
+          "translation": "潜在缺点"
+        },
+        {
+          "text": "main drawback",
+          "translation": "主要弊端"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The only perceived drawback of IELTS was the lack of subject specific content for those teaching in a particular discipline.",
+          "translation": "人们认为雅思唯一的缺点，是缺少面向特定学科教师的专业内容。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "limitation",
+        "weakness",
+        "disadvantage"
+      ]
+    },
+    {
+      "id": "word_038",
+      "word": "limitation",
+      "phonetic": "/ˌlɪmɪˈteɪʃən/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "局限；限制"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "major limitation",
+          "translation": "主要局限"
+        },
+        {
+          "text": "inherent limitation",
+          "translation": "固有局限"
+        },
+        {
+          "text": "overcome limitations",
+          "translation": "克服局限"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "One limitation of that research was the use of a single nationality group.",
+          "translation": "那项研究的一个局限是只采用了单一国籍群体。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "drawback",
+        "weakness",
+        "disadvantage"
+      ]
+    },
+    {
+      "id": "word_039",
+      "word": "weakness",
+      "phonetic": "/ˈwiːknəs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "弱点；缺点"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "major weakness",
+          "translation": "主要弱点"
+        },
+        {
+          "text": "identify weaknesses",
+          "translation": "发现弱点"
+        },
+        {
+          "text": "strengths and weaknesses",
+          "translation": "优势与劣势"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Reading is my weakness not only in this exam but also over my English ability.",
+          "translation": "阅读不仅是我在这场考试中的弱项，也是我英语能力方面的弱项。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "drawback",
+        "limitation",
+        "disadvantage"
+      ]
+    },
+    {
+      "id": "word_040",
+      "word": "disadvantage",
+      "phonetic": "/ˌdɪsədˈvɑːntɪdʒ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "缺点；不利条件"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "major disadvantage",
+          "translation": "主要劣势"
+        },
+        {
+          "text": "distinct disadvantage",
+          "translation": "明显劣势"
+        },
+        {
+          "text": "put someone at a disadvantage",
+          "translation": "使某人处于不利地位"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "So I think that will be a really big disadvantage.",
+          "translation": "所以我认为那会是一个非常大的不利之处。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "drawback",
+        "limitation",
+        "weakness"
+      ]
+    },
+    {
+      "id": "word_041",
+      "word": "beneficial",
+      "phonetic": "/ˌbenɪˈfɪʃəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有益的；有利的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "beneficial effect",
+          "translation": "有益影响"
+        },
+        {
+          "text": "beneficial to health",
+          "translation": "有益健康"
+        },
+        {
+          "text": "mutually beneficial",
+          "translation": "互惠互利的"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "I hope that my research will be beneficial for both teaching and assessment.",
+          "translation": "我希望我的研究能对教学和评估都有益。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "advantageous",
+        "favorable",
+        "constructive"
+      ]
+    },
+    {
+      "id": "word_042",
+      "word": "advantageous",
+      "phonetic": "/ˌædvənˈteɪdʒəs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有利的；有优势的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "advantageous position",
+          "translation": "有利地位"
+        },
+        {
+          "text": "advantageous to",
+          "translation": "对……有利"
+        },
+        {
+          "text": "economically advantageous",
+          "translation": "经济上有利"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Associating ourselves with the UK through the Treaty-Level Agreement is advantageous for us.",
+          "translation": "通过条约级协议与英国建立联系对我们有利。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "beneficial",
+        "favorable",
+        "constructive"
+      ]
+    },
+    {
+      "id": "word_043",
+      "word": "favorable",
+      "phonetic": "/ˈfeɪvərəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有利的；良好的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "favorable conditions",
+          "translation": "有利条件"
+        },
+        {
+          "text": "favorable outcome",
+          "translation": "有利结果"
+        },
+        {
+          "text": "favorable response",
+          "translation": "积极回应"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "If local consumer protection law provides for rights which are more favorable to the test taker, then local consumer protection law will apply.",
+          "translation": "如果当地消费者保护法规定了对考生更有利的权利，则适用当地消费者保护法。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "beneficial",
+        "advantageous",
+        "constructive"
+      ]
+    },
+    {
+      "id": "word_044",
+      "word": "constructive",
+      "phonetic": "/kənˈstrʌktɪv/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "建设性的；有助益的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "constructive feedback",
+          "translation": "建设性反馈"
+        },
+        {
+          "text": "constructive criticism",
+          "translation": "建设性批评"
+        },
+        {
+          "text": "constructive approach",
+          "translation": "建设性方法"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "When you find one who offers you constructive feedback, develop a relationship with them.",
+          "translation": "当你找到一位能给予建设性反馈的人时，应与其建立关系。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "beneficial",
+        "advantageous",
+        "favorable"
+      ]
+    },
+    {
+      "id": "word_045",
+      "word": "detrimental",
+      "phonetic": "/ˌdetrɪˈmentəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有害的；不利的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "detrimental effect",
+          "translation": "不利影响"
+        },
+        {
+          "text": "detrimental to health",
+          "translation": "有害健康"
+        },
+        {
+          "text": "environmentally detrimental",
+          "translation": "对环境有害"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "If it leads to the use of strategies that are detrimental, it could be said to generate negative washback.",
+          "translation": "如果它导致采用有害的策略，就可以说它产生了负面反拨效应。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "adverse",
+        "harmful",
+        "damaging"
+      ]
+    },
+    {
+      "id": "word_046",
+      "word": "adverse",
+      "phonetic": "/ˈædvɜːs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "不利的；有害的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "adverse effect",
+          "translation": "不利影响"
+        },
+        {
+          "text": "adverse impact",
+          "translation": "负面影响"
+        },
+        {
+          "text": "adverse conditions",
+          "translation": "不利条件"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "We act in the best interest of anyone who reports suspected wrongdoing under this policy to protect them from adverse reaction.",
+          "translation": "我们以举报涉嫌不当行为者的最佳利益为出发点，保护他们免受不利反应。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "detrimental",
+        "harmful",
+        "damaging"
+      ]
+    },
+    {
+      "id": "word_047",
+      "word": "harmful",
+      "phonetic": "/ˈhɑːmfəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有害的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "harmful effect",
+          "translation": "有害影响"
+        },
+        {
+          "text": "harmful to health",
+          "translation": "有害健康"
+        },
+        {
+          "text": "environmentally harmful",
+          "translation": "对环境有害"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Washback is considered harmful then when there is a serious disjunct between a test’s construct of reading and the broader demands of real world or target language tasks.",
+          "translation": "当考试对阅读能力的界定与现实世界或目标语言任务的更广泛要求严重脱节时，反拨效应会被视为有害。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "detrimental",
+        "adverse",
+        "damaging"
+      ]
+    },
+    {
+      "id": "word_048",
+      "word": "damaging",
+      "phonetic": "/ˈdæmɪdʒɪŋ/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "有破坏性的；有害的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "damaging effect",
+          "translation": "破坏性影响"
+        },
+        {
+          "text": "damaging consequences",
+          "translation": "破坏性后果"
+        },
+        {
+          "text": "environmentally damaging",
+          "translation": "对环境有破坏性"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "But the consequences can be even more damaging for individuals.",
+          "translation": "但这些后果对个人而言可能更具破坏性。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "detrimental",
+        "adverse",
+        "harmful"
+      ]
+    },
+    {
+      "id": "word_049",
+      "word": "necessary",
+      "phonetic": "/ˈnesəsəri/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "必要的；必需的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "absolutely necessary",
+          "translation": "绝对必要"
+        },
+        {
+          "text": "necessary measures",
+          "translation": "必要措施"
+        },
+        {
+          "text": "necessary condition",
+          "translation": "必要条件"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "No external causes are necessary.",
+          "translation": "不需要任何外部原因。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "indispensable",
+        "compulsory",
+        "mandatory"
+      ]
+    },
+    {
+      "id": "word_050",
+      "word": "indispensable",
+      "phonetic": "/ˌɪndɪˈspensəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "不可或缺的；必不可少的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "indispensable role",
+          "translation": "不可或缺的作用"
+        },
+        {
+          "text": "indispensable to",
+          "translation": "对……不可或缺"
+        },
+        {
+          "text": "indispensable part",
+          "translation": "不可或缺的部分"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The IELTS Writing test is an indispensable asset for institutions evaluating student preparedness for the demands of academic writing.",
+          "translation": "对于评估学生是否为学术写作要求做好准备的院校而言，雅思写作考试是一项不可或缺的工具。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "necessary",
+        "vital",
+        "crucial"
+      ]
+    },
+    {
+      "id": "word_051",
+      "word": "compulsory",
+      "phonetic": "/kəmˈpʌlsəri/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "强制的；义务的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "compulsory education",
+          "translation": "义务教育"
+        },
+        {
+          "text": "compulsory subject",
+          "translation": "必修科目"
+        },
+        {
+          "text": "compulsory requirement",
+          "translation": "强制性要求"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Helmets are compulsory for all participants.",
+          "translation": "所有参与者都必须佩戴头盔。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "mandatory",
+        "necessary"
+      ]
+    },
+    {
+      "id": "word_052",
+      "word": "mandatory",
+      "phonetic": "/ˈmændətəri/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "强制的；法定的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "mandatory requirement",
+          "translation": "强制性要求"
+        },
+        {
+          "text": "mandatory training",
+          "translation": "强制培训"
+        },
+        {
+          "text": "legally mandatory",
+          "translation": "法律强制的"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Although not mandatory for practice, it is usually required by most employers, especially in public health.",
+          "translation": "尽管执业并非强制要求，但大多数雇主通常会要求具备这一条件，尤其是在公共卫生领域。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "compulsory",
+        "necessary"
+      ]
+    },
+    {
+      "id": "word_053",
+      "word": "feasible",
+      "phonetic": "/ˈfiːzəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "可行的；切实可行的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "feasible solution",
+          "translation": "可行的解决方案"
+        },
+        {
+          "text": "economically feasible",
+          "translation": "经济上可行"
+        },
+        {
+          "text": "technically feasible",
+          "translation": "技术上可行"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The report concludes with a recommendation that the ideal cut-off score for Law, Medicine and Humanities should be Band 6, but that this may not prove feasible under current circumstances.",
+          "translation": "报告最后建议法律、医学和人文学科的理想分数线应为六分，但在当前情况下这可能并不可行。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "possible",
+        "viable",
+        "achievable"
+      ]
+    },
+    {
+      "id": "word_054",
+      "word": "possible",
+      "phonetic": "/ˈpɒsəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "可能的；可实现的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "possible solution",
+          "translation": "可能的解决方案"
+        },
+        {
+          "text": "as soon as possible",
+          "translation": "尽快"
+        },
+        {
+          "text": "where possible",
+          "translation": "在可能的情况下"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "If you can’t get to a test centre, or prefer to take the test at home, it is possible to do the IELTS Academic test online.",
+          "translation": "如果你无法前往考点或更愿意在家参加考试，可以在线参加雅思学术类考试。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "feasible",
+        "viable",
+        "achievable"
+      ]
+    },
+    {
+      "id": "word_055",
+      "word": "viable",
+      "phonetic": "/ˈvaɪəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "可行的；可实施的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "viable option",
+          "translation": "可行的选择"
+        },
+        {
+          "text": "viable alternative",
+          "translation": "可行的替代方案"
+        },
+        {
+          "text": "commercially viable",
+          "translation": "商业上可行"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Youth from all nationalities look towards emigration as the most viable option for a bright future.",
+          "translation": "各个国籍的年轻人都把移居国外视为获得光明未来最可行的选择。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "feasible",
+        "possible",
+        "achievable"
+      ]
+    },
+    {
+      "id": "word_056",
+      "word": "achievable",
+      "phonetic": "/əˈtʃiːvəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "可实现的；可达到的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "achievable goal",
+          "translation": "可实现的目标"
+        },
+        {
+          "text": "realistic and achievable",
+          "translation": "现实且可实现"
+        },
+        {
+          "text": "easily achievable",
+          "translation": "容易实现"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Ensure your projects are realistic and achievable.",
+          "translation": "确保你的项目切合实际并且能够实现。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "feasible",
+        "possible",
+        "viable"
+      ]
+    },
+    {
+      "id": "word_057",
+      "word": "prevalent",
+      "phonetic": "/ˈprevələnt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "普遍存在的；盛行的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "increasingly prevalent",
+          "translation": "日益普遍"
+        },
+        {
+          "text": "prevalent belief",
+          "translation": "普遍看法"
+        },
+        {
+          "text": "prevalent among",
+          "translation": "在……中普遍存在"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Stigma is prevalent throughout the country, which results in invisible communities of people isolated from society.",
+          "translation": "污名化在全国普遍存在，导致一些不为人所见的群体被社会孤立。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "widespread",
+        "common",
+        "pervasive"
+      ]
+    },
+    {
+      "id": "word_058",
+      "word": "widespread",
+      "phonetic": "/ˈwaɪdspred/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "广泛的；普遍的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "widespread concern",
+          "translation": "广泛担忧"
+        },
+        {
+          "text": "widespread use",
+          "translation": "广泛使用"
+        },
+        {
+          "text": "widespread recognition",
+          "translation": "广泛认可"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Face-to-face speaking assessment is widespread as a form of assessment, since it allows the elicitation of interactional skills.",
+          "translation": "面对面口语评估是一种广泛使用的评估形式，因为它能够引出互动交流能力。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "prevalent",
+        "common",
+        "pervasive"
+      ]
+    },
+    {
+      "id": "word_059",
+      "word": "common",
+      "phonetic": "/ˈkɒmən/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "常见的；普遍的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "common problem",
+          "translation": "常见问题"
+        },
+        {
+          "text": "common practice",
+          "translation": "常见做法"
+        },
+        {
+          "text": "common feature",
+          "translation": "常见特征"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The test features vocabulary that is common within an academic setting.",
+          "translation": "该考试包含学术环境中常见的词汇。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "prevalent",
+        "widespread",
+        "pervasive"
+      ]
+    },
+    {
+      "id": "word_060",
+      "word": "pervasive",
+      "phonetic": "/pəˈveɪsɪv/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "无处不在的；遍布的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "pervasive influence",
+          "translation": "无处不在的影响"
+        },
+        {
+          "text": "pervasive problem",
+          "translation": "普遍存在的问题"
+        },
+        {
+          "text": "pervasive presence",
+          "translation": "广泛存在"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Advertising is so pervasive in most cultures that it shapes our choices even if we might not be aware of it.",
+          "translation": "广告在大多数文化中无处不在，以至于即使我们可能没有意识到，它也会影响我们的选择。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "prevalent",
+        "widespread",
+        "common"
+      ]
+    },
+    {
+      "id": "word_061",
+      "word": "substantial",
+      "phonetic": "/səbˈstænʃəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "大量的；重大的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "substantial increase",
+          "translation": "大幅增长"
+        },
+        {
+          "text": "substantial amount",
+          "translation": "大量"
+        },
+        {
+          "text": "substantial evidence",
+          "translation": "充分证据"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The revised TOEFL iBT represents a substantial construct shift, undermining assumptions of score equivalence with earlier TOEFL versions.",
+          "translation": "修订后的托福网考在考试构念上发生了重大转变，削弱了其分数与早期版本等值的假设。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "considerable",
+        "notable",
+        "marked"
+      ]
+    },
+    {
+      "id": "word_062",
+      "word": "considerable",
+      "phonetic": "/kənˈsɪdərəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "相当大的；可观的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "considerable amount",
+          "translation": "相当大的数量"
+        },
+        {
+          "text": "considerable variation",
+          "translation": "相当大的差异"
+        },
+        {
+          "text": "considerable evidence",
+          "translation": "大量证据"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "There was considerable variation, with one course lasting for two years and several lasting for less than a month.",
+          "translation": "课程时长存在相当大的差异，其中一门课程持续两年，而另有几门不足一个月。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "substantial",
+        "notable",
+        "marked"
+      ]
+    },
+    {
+      "id": "word_063",
+      "word": "notable",
+      "phonetic": "/ˈnəʊtəbəl/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "显著的；值得注意的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "notable difference",
+          "translation": "明显差异"
+        },
+        {
+          "text": "notable increase",
+          "translation": "显著增长"
+        },
+        {
+          "text": "notable example",
+          "translation": "值得注意的例子"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "As Sudan is experiencing a period of notable change, this research aims to ensure that young people’s voices are heard.",
+          "translation": "由于苏丹正经历一个显著变化的时期，这项研究旨在确保年轻人的声音被听见。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "substantial",
+        "considerable",
+        "marked"
+      ]
+    },
+    {
+      "id": "word_064",
+      "word": "marked",
+      "phonetic": "/mɑːkt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "adj.",
+          "definitionZh": "明显的；显著的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "marked increase",
+          "translation": "明显增长"
+        },
+        {
+          "text": "marked difference",
+          "translation": "明显差异"
+        },
+        {
+          "text": "marked improvement",
+          "translation": "显著改善"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Indeed, there has been a marked increase in enrolment rates in both secondary and higher education over the last decade.",
+          "translation": "事实上，过去十年中，中等教育和高等教育的入学率均显著上升。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "substantial",
+        "considerable",
+        "notable"
+      ]
+    },
+    {
+      "id": "word_065",
+      "word": "analyze",
+      "phonetic": "/ˈænəlaɪz/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "分析；剖析"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "analyze data",
+          "translation": "分析数据"
+        },
+        {
+          "text": "analyze information",
+          "translation": "分析信息"
+        },
+        {
+          "text": "carefully analyze",
+          "translation": "仔细分析"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "It is also important to be able to analyze new situations and to find solutions to specialist problems.",
+          "translation": "能够分析新情况并找到专业问题的解决方案同样重要。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "assess",
+        "evaluate",
+        "examine"
+      ]
+    },
+    {
+      "id": "word_066",
+      "word": "assess",
+      "phonetic": "/əˈses/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "评估；评价"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "assess performance",
+          "translation": "评估表现"
+        },
+        {
+          "text": "assess the impact",
+          "translation": "评估影响"
+        },
+        {
+          "text": "carefully assess",
+          "translation": "仔细评估"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "IELTS provides tests that assess English language skills in listening, reading, writing, and speaking.",
+          "translation": "雅思提供用于评估英语听、说、读、写技能的考试。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "analyze",
+        "evaluate",
+        "examine"
+      ]
+    },
+    {
+      "id": "word_067",
+      "word": "evaluate",
+      "phonetic": "/ɪˈvæljueɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "评价；评估"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "evaluate evidence",
+          "translation": "评估证据"
+        },
+        {
+          "text": "evaluate performance",
+          "translation": "评价表现"
+        },
+        {
+          "text": "critically evaluate",
+          "translation": "批判性评估"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Depending on the task type, test takers are assessed on their ability to evaluate and challenge ideas, evidence or an argument.",
+          "translation": "根据任务类型，考生对观点、证据或论点进行评价和质疑的能力会受到评估。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "analyze",
+        "assess",
+        "examine"
+      ]
+    },
+    {
+      "id": "word_068",
+      "word": "examine",
+      "phonetic": "/ɪɡˈzæmɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "检查；仔细研究"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "examine evidence",
+          "translation": "审查证据"
+        },
+        {
+          "text": "examine the relationship",
+          "translation": "研究……之间的关系"
+        },
+        {
+          "text": "closely examine",
+          "translation": "仔细审视"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This study examines the possible affective and academic impacts of the IELTS performance of a group of postgraduate students.",
+          "translation": "这项研究考察了一组研究生雅思表现可能产生的情感和学业影响。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "analyze",
+        "assess",
+        "evaluate"
+      ]
+    },
+    {
+      "id": "word_069",
+      "word": "influence",
+      "phonetic": "/ˈɪnfluəns/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "影响；对……产生作用"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "influence behaviour",
+          "translation": "影响行为"
+        },
+        {
+          "text": "influence decisions",
+          "translation": "影响决定"
+        },
+        {
+          "text": "significantly influence",
+          "translation": "显著影响"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Tests are not neutral – they influence the way students study and the skills they prioritise.",
+          "translation": "考试并非中立，它们会影响学生的学习方式以及他们优先培养的技能。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "affect",
+        "impact",
+        "shape"
+      ]
+    },
+    {
+      "id": "word_070",
+      "word": "affect",
+      "phonetic": "/əˈfekt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "影响；对……产生作用"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "affect performance",
+          "translation": "影响表现"
+        },
+        {
+          "text": "adversely affect",
+          "translation": "产生不利影响"
+        },
+        {
+          "text": "directly affect",
+          "translation": "直接影响"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The tests you accept affect who enters your programmes, how well they perform, and ultimately how your university is perceived.",
+          "translation": "你所接受的考试会影响哪些人进入课程、他们的表现如何，以及最终外界如何看待你的大学。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "influence",
+        "impact",
+        "shape"
+      ]
+    },
+    {
+      "id": "word_071",
+      "word": "impact",
+      "phonetic": "/ɪmˈpækt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "影响；对……产生作用"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "significantly impact",
+          "translation": "产生显著影响"
+        },
+        {
+          "text": "negatively impact",
+          "translation": "产生负面影响"
+        },
+        {
+          "text": "impact performance",
+          "translation": "影响表现"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "It also potentially impacts student success and can affect trust in your decisions and institution.",
+          "translation": "这也可能影响学生能否成功，并影响人们对你的决策和院校的信任。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "influence",
+        "affect",
+        "shape"
+      ]
+    },
+    {
+      "id": "word_072",
+      "word": "shape",
+      "phonetic": "/ʃeɪp/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "塑造；影响"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "shape behaviour",
+          "translation": "塑造行为"
+        },
+        {
+          "text": "shape public opinion",
+          "translation": "影响公众舆论"
+        },
+        {
+          "text": "help shape",
+          "translation": "帮助塑造"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The research explores the motivations, experiences and decisions shaping international mobility.",
+          "translation": "这项研究探讨了塑造国际流动的动机、经历和决策。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "influence",
+        "affect",
+        "impact"
+      ]
+    },
+    {
+      "id": "word_073",
+      "word": "cause",
+      "phonetic": "/kɔːz/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "导致；引起"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "cause confusion",
+          "translation": "引起混淆"
+        },
+        {
+          "text": "cause problems",
+          "translation": "造成问题"
+        },
+        {
+          "text": "cause damage",
+          "translation": "造成损害"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Grammatical errors can change the meaning of your sentence and can cause confusion.",
+          "translation": "语法错误会改变句子的含义，并可能引起混淆。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "induce",
+        "trigger",
+        "generate"
+      ]
+    },
+    {
+      "id": "word_074",
+      "word": "induce",
+      "phonetic": "/ɪnˈdjuːs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "引起；诱发"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "induce a response",
+          "translation": "引发反应"
+        },
+        {
+          "text": "induce change",
+          "translation": "引起变化"
+        },
+        {
+          "text": "induce stress",
+          "translation": "引发压力"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Another hypothesis suggests that decreased processing of glucose could indicate to cells that food is scarce (even if it isn’t) and induce them to shift into an anti-aging mode that emphasizes preservation of the organism over such ‘luxuries’ as growth and reproduction.",
+          "translation": "另一种假说认为，葡萄糖处理量减少可能会让细胞认为食物匮乏（即便事实并非如此），并促使它们转入抗衰老模式，优先维持机体，而不是生长和繁殖等“奢侈”活动。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "cause",
+        "trigger",
+        "generate"
+      ]
+    },
+    {
+      "id": "word_075",
+      "word": "trigger",
+      "phonetic": "/ˈtrɪɡə/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "触发；引发"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "trigger a response",
+          "translation": "触发反应"
+        },
+        {
+          "text": "trigger a reaction",
+          "translation": "引发反应"
+        },
+        {
+          "text": "trigger change",
+          "translation": "引发变化"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Under the right conditions a brief and local fluctuation in the speed or the distance between vehicles is all it takes to trigger a system-wide breakdown that persists for hours.",
+          "translation": "在适当条件下，车辆速度或车距出现短暂的局部波动，就足以触发持续数小时的系统性瘫痪。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "cause",
+        "induce",
+        "generate"
+      ]
+    },
+    {
+      "id": "word_076",
+      "word": "generate",
+      "phonetic": "/ˈdʒenəreɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "产生；引起"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "generate interest",
+          "translation": "引起兴趣"
+        },
+        {
+          "text": "generate income",
+          "translation": "产生收入"
+        },
+        {
+          "text": "generate results",
+          "translation": "产生结果"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "More recently, AI-powered SDSs have emerged, using large language models to generate responses in real time.",
+          "translation": "最近，采用大型语言模型实时生成回答的人工智能系统已经出现。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "cause",
+        "induce",
+        "trigger"
+      ]
+    },
+    {
+      "id": "word_077",
+      "word": "consequence",
+      "phonetic": "/ˈkɒnsɪkwəns/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "后果；结果"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "serious consequence",
+          "translation": "严重后果"
+        },
+        {
+          "text": "unintended consequence",
+          "translation": "意外后果"
+        },
+        {
+          "text": "as a consequence",
+          "translation": "因此"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The campaigners point out that there has been no sudden increase in litigation as a consequence of the increase in plain English materials.",
+          "translation": "倡导者指出，通俗英语材料的增加并未导致诉讼案件突然增多。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "outcome",
+        "result",
+        "effect"
+      ]
+    },
+    {
+      "id": "word_078",
+      "word": "outcome",
+      "phonetic": "/ˈaʊtkʌm/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "结果；成果"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "positive outcome",
+          "translation": "积极结果"
+        },
+        {
+          "text": "likely outcome",
+          "translation": "可能的结果"
+        },
+        {
+          "text": "learning outcome",
+          "translation": "学习成果"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "These washback behaviours and practices arguably constrain and negatively affect the learning outcome.",
+          "translation": "这些反拨行为和做法可以说会限制学习，并对学习成果产生负面影响。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "consequence",
+        "result",
+        "effect"
+      ]
+    },
+    {
+      "id": "word_079",
+      "word": "result",
+      "phonetic": "/rɪˈzʌlt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "结果；成果"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "achieve results",
+          "translation": "取得成果"
+        },
+        {
+          "text": "final result",
+          "translation": "最终结果"
+        },
+        {
+          "text": "as a result",
+          "translation": "因此"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "An IELTS result can help your journey for study, work, and life abroad.",
+          "translation": "雅思成绩能够助力你的海外学习、工作和生活之旅。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "consequence",
+        "outcome",
+        "effect"
+      ]
+    },
+    {
+      "id": "word_080",
+      "word": "effect",
+      "phonetic": "/ɪˈfekt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "影响；效果"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "significant effect",
+          "translation": "显著影响"
+        },
+        {
+          "text": "adverse effect",
+          "translation": "不利影响"
+        },
+        {
+          "text": "have an effect on",
+          "translation": "对……产生影响"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Put simply, washback is the effect a test has on teaching and learning.",
+          "translation": "简而言之，反拨效应是指考试对教学和学习产生的影响。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "consequence",
+        "outcome",
+        "result"
+      ]
+    },
+    {
+      "id": "word_081",
+      "word": "preserve",
+      "phonetic": "/prɪˈzɜːv/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "保护；保存"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "preserve the environment",
+          "translation": "保护环境"
+        },
+        {
+          "text": "preserve cultural heritage",
+          "translation": "保护文化遗产"
+        },
+        {
+          "text": "preserve evidence",
+          "translation": "保存证据"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The scholar David Crystal suggests that it's important to preserve your native language, as it's an important component of identity.",
+          "translation": "学者戴维·克里斯特尔认为，保护母语十分重要，因为母语是身份认同的重要组成部分。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "conserve",
+        "protect",
+        "safeguard"
+      ]
+    },
+    {
+      "id": "word_082",
+      "word": "conserve",
+      "phonetic": "/kənˈsɜːv/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "保护；节约"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "conserve energy",
+          "translation": "节约能源"
+        },
+        {
+          "text": "conserve natural resources",
+          "translation": "保护自然资源"
+        },
+        {
+          "text": "conserve water",
+          "translation": "节约用水"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Over the years, the Taj Mahal has suffered from environmental damage, and there have been many government attempts to conserve its beauty.",
+          "translation": "多年来，泰姬陵一直遭受环境破坏，政府曾多次尝试保护其美景。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "preserve",
+        "protect",
+        "safeguard"
+      ]
+    },
+    {
+      "id": "word_083",
+      "word": "protect",
+      "phonetic": "/prəˈtekt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "保护；防护"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "protect the environment",
+          "translation": "保护环境"
+        },
+        {
+          "text": "protect against harm",
+          "translation": "防止伤害"
+        },
+        {
+          "text": "protect human rights",
+          "translation": "保护人权"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "These measures help protect test takers, maintain trust in results and ensure scores reflect test-taker ability – not fraud, impersonation or malpractice.",
+          "translation": "这些措施有助于保护考生、维护对成绩的信任，并确保分数反映考生的真实能力，而不是欺诈、冒名顶替或违规行为。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "preserve",
+        "conserve",
+        "safeguard"
+      ]
+    },
+    {
+      "id": "word_084",
+      "word": "safeguard",
+      "phonetic": "/ˈseɪfɡɑːd/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "保护；维护"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "safeguard public health",
+          "translation": "保障公共健康"
+        },
+        {
+          "text": "safeguard rights",
+          "translation": "维护权利"
+        },
+        {
+          "text": "safeguard the environment",
+          "translation": "保护环境"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "A strict set of protocols and robust systems are in place to safeguard every aspect of the IELTS test.",
+          "translation": "雅思采用一套严格的规程和稳健的系统来保障考试的各个环节。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "preserve",
+        "conserve",
+        "protect"
+      ]
+    },
+    {
+      "id": "word_085",
+      "word": "acquire",
+      "phonetic": "/əˈkwaɪə/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "获得；习得"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "acquire knowledge",
+          "translation": "获取知识"
+        },
+        {
+          "text": "acquire skills",
+          "translation": "掌握技能"
+        },
+        {
+          "text": "acquire a language",
+          "translation": "习得语言"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "It seems that we first developed the ability to acquire knowledge, beliefs, and practices from others about 160,000 to 200,000 years ago.",
+          "translation": "我们似乎在大约16万至20万年前首次形成了从他人那里获取知识、信念和实践方式的能力。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "obtain",
+        "attain",
+        "gain"
+      ]
+    },
+    {
+      "id": "word_086",
+      "word": "obtain",
+      "phonetic": "/əbˈteɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "获得；取得"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "obtain information",
+          "translation": "获取信息"
+        },
+        {
+          "text": "obtain permission",
+          "translation": "获得许可"
+        },
+        {
+          "text": "obtain a qualification",
+          "translation": "获得资格"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Furthermore, some students do not have easy access to the paper, since the only way to obtain a copy is to physically go to university.",
+          "translation": "此外，一些学生不容易拿到这份报纸，因为获得一份纸质报纸的唯一方式是亲自前往大学。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "acquire",
+        "attain",
+        "gain"
+      ]
+    },
+    {
+      "id": "word_087",
+      "word": "attain",
+      "phonetic": "/əˈteɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "达到；获得"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "attain a goal",
+          "translation": "达成目标"
+        },
+        {
+          "text": "attain proficiency",
+          "translation": "达到熟练水平"
+        },
+        {
+          "text": "attain a high level",
+          "translation": "达到高水平"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Being well-prepared for your IELTS test is key in ensuring you stand the best chance to attain the band score you require to enter your dream university.",
+          "translation": "充分备考雅思，是确保你最有可能达到理想大学所要求分数的关键。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "acquire",
+        "obtain",
+        "gain"
+      ]
+    },
+    {
+      "id": "word_088",
+      "word": "gain",
+      "phonetic": "/ɡeɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "获得；赢得"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "gain experience",
+          "translation": "获得经验"
+        },
+        {
+          "text": "gain access to",
+          "translation": "获得……的访问权限"
+        },
+        {
+          "text": "gain knowledge",
+          "translation": "获取知识"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Gain valuable experience, attend world-class institutions, and boost your chances of employment by studying abroad.",
+          "translation": "通过海外留学积累宝贵经验、就读世界一流院校，并提高就业机会。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "acquire",
+        "obtain",
+        "attain"
+      ]
+    },
+    {
+      "id": "word_089",
+      "word": "facilitate",
+      "phonetic": "/fəˈsɪlɪteɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "促进；使便利"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "facilitate learning",
+          "translation": "促进学习"
+        },
+        {
+          "text": "facilitate communication",
+          "translation": "促进沟通"
+        },
+        {
+          "text": "facilitate access",
+          "translation": "使获取更便利"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "This facilitates the identification of issues and warning signs that are typically harder to detect with small data sets.",
+          "translation": "这有助于识别那些通常较难通过小型数据集发现的问题和警示信号。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "promote",
+        "support",
+        "foster"
+      ]
+    },
+    {
+      "id": "word_090",
+      "word": "promote",
+      "phonetic": "/prəˈməʊt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "促进；推动"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "promote growth",
+          "translation": "促进增长"
+        },
+        {
+          "text": "promote awareness",
+          "translation": "提高认识"
+        },
+        {
+          "text": "promote equality",
+          "translation": "促进平等"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "If that test promotes useful learning habits, students arrive well equipped for lectures, seminars and coursework.",
+          "translation": "如果考试能促进有益的学习习惯，学生在进入大学时就能更充分地应对讲座、研讨课和课程作业。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "facilitate",
+        "support",
+        "foster"
+      ]
+    },
+    {
+      "id": "word_091",
+      "word": "support",
+      "phonetic": "/səˈpɔːt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "支持；促进"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "support development",
+          "translation": "支持发展"
+        },
+        {
+          "text": "support learning",
+          "translation": "支持学习"
+        },
+        {
+          "text": "strongly support",
+          "translation": "强烈支持"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Beyond the classroom, effective communication in spoken English supports student wellbeing, a sense of belonging and ultimately, the desire to persevere with their studies.",
+          "translation": "在课堂之外，有效的英语口语交流有助于学生的身心健康、归属感，并最终增强其坚持学业的意愿。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "facilitate",
+        "promote",
+        "foster"
+      ]
+    },
+    {
+      "id": "word_092",
+      "word": "foster",
+      "phonetic": "/ˈfɒstə/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "促进；培养"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "foster development",
+          "translation": "促进发展"
+        },
+        {
+          "text": "foster collaboration",
+          "translation": "促进合作"
+        },
+        {
+          "text": "foster innovation",
+          "translation": "促进创新"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "For example, well-designed tests can foster positive, lasting study habits.",
+          "translation": "例如，设计良好的考试可以培养积极且持久的学习习惯。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "facilitate",
+        "promote",
+        "support"
+      ]
+    },
+    {
+      "id": "word_093",
+      "word": "restrict",
+      "phonetic": "/rɪˈstrɪkt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "限制；约束"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "restrict access",
+          "translation": "限制访问"
+        },
+        {
+          "text": "restrict movement",
+          "translation": "限制行动"
+        },
+        {
+          "text": "severely restrict",
+          "translation": "严格限制"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Despite this test taker’s ability to keep going throughout her long turn, her grammatical limitations and pronunciation problems restrict her rating to Band 5.",
+          "translation": "尽管这名考生能在长段回答中持续表达，但语法局限和发音问题使她的评分只能达到5分。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "constrain",
+        "inhibit",
+        "hinder"
+      ]
+    },
+    {
+      "id": "word_094",
+      "word": "constrain",
+      "phonetic": "/kənˈstreɪn/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "限制；约束"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "constrain growth",
+          "translation": "限制增长"
+        },
+        {
+          "text": "constrain development",
+          "translation": "制约发展"
+        },
+        {
+          "text": "constrain choice",
+          "translation": "限制选择"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Reduced operation of the machinery should limit their production and thereby constrain the damage.",
+          "translation": "降低这种机制的运作水平应能限制其产量，从而控制损害。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "restrict",
+        "inhibit",
+        "hinder"
+      ]
+    },
+    {
+      "id": "word_095",
+      "word": "inhibit",
+      "phonetic": "/ɪnˈhɪbɪt/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "抑制；阻碍"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "inhibit growth",
+          "translation": "抑制增长"
+        },
+        {
+          "text": "inhibit development",
+          "translation": "阻碍发展"
+        },
+        {
+          "text": "inhibit learning",
+          "translation": "妨碍学习"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Timetabling constraints inhibit all learners from studying a language in 55 per cent of responding schools.",
+          "translation": "在参与调查的学校中，有55%的学校因课程安排限制而使所有学生无法学习一门语言。",
+          "source": "British Council",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "restrict",
+        "constrain",
+        "hinder"
+      ]
+    },
+    {
+      "id": "word_096",
+      "word": "hinder",
+      "phonetic": "/ˈhɪndə/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "v.",
+          "definitionZh": "阻碍；妨碍"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "hinder progress",
+          "translation": "阻碍进展"
+        },
+        {
+          "text": "hinder development",
+          "translation": "阻碍发展"
+        },
+        {
+          "text": "seriously hinder",
+          "translation": "严重阻碍"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "Limited language skills can hinder students’ social and contextual experiences, leading to frustration, isolation and disengagement, which increases their vulnerability to stress and withdrawal.",
+          "translation": "有限的语言能力会妨碍学生的社交和情境体验，导致挫败、孤立和疏离，并使他们更容易承受压力和产生退缩情绪。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "restrict",
+        "constrain",
+        "inhibit"
+      ]
+    },
+    {
+      "id": "word_097",
+      "word": "objective",
+      "phonetic": "/əbˈdʒektɪv/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "目标；目的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "achieve an objective",
+          "translation": "实现目标"
+        },
+        {
+          "text": "primary objective",
+          "translation": "首要目标"
+        },
+        {
+          "text": "clear objective",
+          "translation": "明确目标"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "For example, many governments around the world set CEFR level B1 as an objective for language learning either for the end of secondary education, or for university graduates.",
+          "translation": "例如，世界许多国家的政府把欧洲语言共同参考框架B1级设为中学毕业或大学毕业生的语言学习目标。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "aim",
+        "purpose",
+        "intention"
+      ]
+    },
+    {
+      "id": "word_098",
+      "word": "aim",
+      "phonetic": "/eɪm/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "目标；目的"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "main aim",
+          "translation": "主要目标"
+        },
+        {
+          "text": "achieve an aim",
+          "translation": "实现目标"
+        },
+        {
+          "text": "with the aim of",
+          "translation": "旨在"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The aim of this study is to provide evidence of the validity of the IELTS Speaking Test based on test content.",
+          "translation": "本研究旨在根据考试内容，为雅思口语考试的效度提供证据。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "objective",
+        "purpose",
+        "intention"
+      ]
+    },
+    {
+      "id": "word_099",
+      "word": "purpose",
+      "phonetic": "/ˈpɜːpəs/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "目的；用途"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "main purpose",
+          "translation": "主要目的"
+        },
+        {
+          "text": "serve a purpose",
+          "translation": "发挥作用"
+        },
+        {
+          "text": "for the purpose of",
+          "translation": "为了……的目的"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "To meet the requirements of the task, the letter needs to have a clear purpose.",
+          "translation": "为了满足任务要求，这封信需要有明确的写作目的。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "objective",
+        "aim",
+        "intention"
+      ]
+    },
+    {
+      "id": "word_100",
+      "word": "intention",
+      "phonetic": "/ɪnˈtenʃən/",
+      "meanings": [
+        {
+          "id": "meaning_01",
+          "partOfSpeech": "n.",
+          "definitionZh": "意图；打算"
+        }
+      ],
+      "collocations": [
+        {
+          "text": "clear intention",
+          "translation": "明确意图"
+        },
+        {
+          "text": "have no intention of",
+          "translation": "无意做……"
+        },
+        {
+          "text": "with the intention of",
+          "translation": "意图……"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "text": "The unstated but assumed intention is to assess a writer's language ability.",
+          "translation": "未明说但默认的意图是评估写作者的语言能力。",
+          "source": "IELTS 官方",
+          "meaningId": "meaning_01"
+        }
+      ],
+      "synonyms": [
+        "objective",
+        "aim",
+        "purpose"
+      ]
+    }
+  ]
+}

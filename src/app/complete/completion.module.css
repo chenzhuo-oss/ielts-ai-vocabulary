@@ -1,0 +1,251 @@
+.page {
+  --black: #11120f;
+  --surface: #ffffff;
+  --new-blue: #cdefff;
+  --review-yellow: #ffd12e;
+  --emotion-pink: #ff78a8;
+  --secondary: #4b4d47;
+  min-height: 100svh;
+  background: var(--surface);
+  color: var(--black);
+  font-family: var(--font-noto-sans-sc), sans-serif;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  min-height: max(844px, 100svh);
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.doneSticker {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  display: inline-flex;
+  width: 92px;
+  height: 23px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--emotion-pink);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading {
+  position: absolute;
+  top: 72px;
+  left: 20px;
+}
+
+.heading h1,
+.heading p {
+  margin: 0;
+}
+
+.heading h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.heading p {
+  margin-top: 4px;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.celebrationGoose {
+  position: absolute;
+  top: 131px;
+  left: 50%;
+  width: 251px;
+  height: 251px;
+  transform: translateX(-50%);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.masterySummary {
+  position: absolute;
+  top: 356px;
+  left: 20px;
+}
+
+.masteryValue {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.masteryValue strong {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.masteryValue span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.itemChips {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.itemChips span {
+  display: inline-flex;
+  min-width: 76px;
+  height: 23px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 12px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.newChip {
+  background: var(--new-blue);
+}
+
+.reviewChip {
+  background: var(--review-yellow);
+}
+
+.longTermStats {
+  position: absolute;
+  top: 508px;
+  left: 20px;
+  display: grid;
+  width: calc(100% - 40px);
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid var(--black);
+  padding-top: 22px;
+}
+
+.metric {
+  display: flex;
+  min-height: 70px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric + .metric {
+  border-left: 2px solid var(--black);
+  padding-left: 20px;
+}
+
+.metric > span {
+  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.metric strong {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.backHomeButton,
+.primaryButton {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 19px;
+  background: var(--black);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.backHomeButton {
+  position: absolute;
+  top: 630px;
+  left: 20px;
+  width: calc(100% - 40px);
+}
+
+.backHomeButton img,
+.primaryButton img {
+  width: 10px;
+  height: 10px;
+}
+
+.backHomeButton:focus-visible,
+.primaryButton:focus-visible {
+  outline: 2px solid var(--black);
+  outline-offset: 3px;
+}
+
+.loading {
+  width: min(350px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: 48px;
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.emptyState {
+  width: min(350px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: 160px;
+  text-align: center;
+}
+
+.emptyState h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.emptyState p {
+  margin: 12px 0 32px;
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 374px) {
+  .doneSticker,
+  .heading,
+  .masterySummary,
+  .longTermStats,
+  .backHomeButton {
+    left: 16px;
+  }
+
+  .longTermStats,
+  .backHomeButton {
+    width: calc(100% - 32px);
+  }
+
+  .celebrationGoose {
+    width: 235px;
+    height: 235px;
+  }
+}

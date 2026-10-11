@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Header / Back">
+<rect x="0.75" y="0.75" width="38.5" height="38.5" rx="19.25" fill="white"/>
+<rect x="0.75" y="0.75" width="38.5" height="38.5" rx="19.25" stroke="#11120F" stroke-width="1.5"/>
+<path id="Back Arrow" d="M19.875 27.75L12 19.875L19.875 12L21.6875 13.7969L16.9297 18.5547H28.0781V21.1953H16.9297L21.6875 25.9453L19.875 27.75Z" fill="#11120F"/>
+</g>
+</svg>

@@ -1,0 +1,497 @@
+.page {
+  --black: #11120f;
+  --warm-white: #f8f4ea;
+  --surface: #ffffff;
+  --new-blue: #cdefff;
+  --review-yellow: #ffd12e;
+  --review-yellow-soft: rgba(255, 209, 46, 0.38);
+  --emotion-pink: #ff78a8;
+  --secondary: #4b4d47;
+  min-height: 100svh;
+  background: var(--surface);
+  color: var(--black);
+  font-family: var(--font-noto-sans-sc), sans-serif;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  min-height: max(844px, 100svh);
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.welcome {
+  position: relative;
+  height: 325px;
+  padding-top: max(22px, env(safe-area-inset-top));
+}
+
+.dateSticker,
+.todaySticker,
+.packStageSticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--black);
+  color: white;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.dateSticker {
+  position: absolute;
+  top: max(22px, env(safe-area-inset-top));
+  left: 20px;
+  padding: 5px 11px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+}
+
+.welcomeCopy {
+  position: absolute;
+  top: 101px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.welcomeCopy h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.welcomeCopy p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.motivationSticker {
+  position: absolute;
+  z-index: 3;
+  top: 64px;
+  right: 20px;
+  transform: rotate(25.4deg);
+  border-radius: 999px;
+  background: var(--emotion-pink);
+  padding: 5px 10px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.homeGoose {
+  position: absolute;
+  z-index: 2;
+  top: 89px;
+  right: 20px;
+  width: 168px;
+  height: 112px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.streakCard {
+  position: absolute;
+  top: 187px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 139px;
+  border: 2.5px solid var(--black);
+  border-radius: 28px;
+  background: var(--warm-white);
+}
+
+.streakValue {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.streakValue strong {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.streakUnit {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.streakDescription {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.totalCheckIns {
+  position: absolute;
+  top: 27px;
+  right: 18px;
+  min-width: 88px;
+  height: 23px;
+  border: 1.5px solid var(--black);
+  border-radius: 999px;
+  background: var(--new-blue);
+  padding: 3px 9px 4px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: center;
+}
+
+.streakNodes {
+  position: absolute;
+  top: 89px;
+  left: 18px;
+  display: flex;
+  width: 162px;
+  height: 18px;
+  align-items: center;
+  gap: 12px;
+}
+
+.streakNode {
+  display: block;
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  border: 1.5px solid var(--black);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.streakNodeCompleted {
+  border-color: var(--black);
+  background: var(--black);
+}
+
+.streakNodeCurrent {
+  width: 18px;
+  height: 18px;
+  flex-basis: 18px;
+  border-color: var(--black);
+  background: var(--review-yellow);
+}
+
+.stageProgress {
+  position: absolute;
+  top: 91px;
+  right: 18px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.todaySection {
+  position: absolute;
+  top: 358px;
+  left: 20px;
+  width: calc(100% - 40px);
+  min-height: 322px;
+}
+
+.todayHeadingRow {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  gap: 9px;
+}
+
+.todaySticker {
+  height: 23px;
+  padding: 5px 11px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+}
+
+.todayHeadingRow h2 {
+  margin: 0;
+  font-family: var(--font-noto-sans-sc), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-synthesis: none;
+  line-height: normal;
+}
+
+.packSummary {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 20px;
+  background: var(--warm-white);
+  padding: 0 16px;
+  color: var(--black);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.packName {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.packCount {
+  margin-left: 8px;
+  color: var(--secondary);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.packArrow,
+.packStageArrow {
+  width: 7px;
+  height: 7px;
+  transform: rotate(-45deg);
+  border-right: 1.5px solid var(--black);
+  border-bottom: 1.5px solid var(--black);
+}
+
+.packArrow {
+  margin-left: auto;
+}
+
+.progressSummary {
+  position: relative;
+  display: flex;
+  height: 82px;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.progressSummary strong {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.progressTotal {
+  margin-left: 10px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.progressDescription {
+  margin-left: 16px;
+  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.progressBar {
+  display: flex;
+  width: 100%;
+  height: 12px;
+  gap: 4px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.progressBar span {
+  min-width: 0;
+  height: 12px;
+}
+
+.mastered { background: var(--black); }
+.pendingNew { background: var(--new-blue); }
+.pendingReview { background: var(--review-yellow-soft); }
+
+.progressLegend {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.newChip,
+.reviewChip,
+.extraBadge {
+  display: inline-flex;
+  min-height: 23px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.newChip { background: var(--new-blue); }
+.reviewChip,
+.extraBadge { background: var(--review-yellow-soft); }
+
+.completedSummary {
+  display: flex;
+  height: 37px;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.completedSummary strong {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.extraBadge {
+  min-height: 25px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.primaryCta {
+  display: flex;
+  width: 100%;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+  border: 0;
+  border-radius: 19px;
+  background: var(--black);
+  color: white;
+  font-family: var(--font-noto-sans-sc), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-synthesis: none;
+  cursor: pointer;
+}
+
+.primaryCta span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--review-yellow);
+}
+
+.primaryCta:focus-visible,
+.packSummary:focus-visible,
+.packStageCompletion:focus-visible {
+  outline: 2px solid var(--black);
+  outline-offset: 4px;
+}
+
+.packStageCompletion {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 102px;
+  align-items: center;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 18px;
+  background: var(--warm-white);
+  padding: 12px 16px;
+  color: var(--black);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.packStageCopy {
+  display: flex;
+  width: 242px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.packStageSticker {
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.packStageCompletion strong {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.packStageDescription {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.packStageIcon {
+  position: absolute;
+  top: 19px;
+  right: 55px;
+  width: 48px;
+  height: 62px;
+}
+
+.packStageArrow {
+  position: absolute;
+  top: 47px;
+  right: 17px;
+}
+
+.todaySectionStageComplete .progressSummary {
+  margin-top: 16px;
+}
+
+.loading {
+  min-height: 100svh;
+  background: white;
+  padding: 40px 20px;
+  color: #4b4d47;
+  font-family: var(--font-noto-sans-sc), sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 369px) {
+  .streakDescription { display: none; }
+  .packStageCompletion strong { font-size: 14px; }
+  .packStageDescription { font-size: 10px; }
+  .packStageIcon { width: 40px; }
+}
+
+@media (min-width: 430px) {
+  .page {
+    background: var(--warm-white);
+    padding: 24px 0;
+  }
+
+  .canvas {
+    min-height: 844px;
+    border-radius: 34px;
+  }
+}
