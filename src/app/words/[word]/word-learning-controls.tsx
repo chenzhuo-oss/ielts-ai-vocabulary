@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AppLink } from "@/components/navigation/app-link";
 import {
   getDailySession,
   getNextUnmasteredItemIndex,
@@ -101,8 +101,11 @@ export function WordLearningControls(props: WordLearningControlsProps) {
         : `/learn?sessionDate=${props.sessionDate}&index=${nextIndex}`;
 
     return (
-      <Link
+      <AppLink
         href={href}
+        intent={allItemsMastered ? "flow-completion" : "forward"}
+        source="word-detail-learning"
+        fallback="/"
         onClick={() => {
           if (extraSession && allItemsMastered) {
             completeExtraSession(props.extraSessionId!);
@@ -119,7 +122,7 @@ export function WordLearningControls(props: WordLearningControlsProps) {
             ? "完成额外学习"
             : "完成今日学习"
           : "下一个单词"}
-      </Link>
+      </AppLink>
     );
   }
 

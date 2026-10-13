@@ -3,11 +3,158 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --page-max-width: 390px;
+  --page-gutter: 20px;
+  --navigation-duration: 250ms;
+  --navigation-easing: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-page-surface {
+  min-height: 100dvh;
+}
+
+::view-transition-group(.nav-page-forward),
+::view-transition-group(.nav-page-back),
+::view-transition-group(.nav-page-flow-exit),
+::view-transition-group(.nav-page-flow-completion) {
+  animation-duration: var(--navigation-duration);
+  animation-timing-function: var(--navigation-easing);
+}
+
+::view-transition-old(.nav-page-forward) {
+  animation: navigation-forward-old var(--navigation-duration)
+    var(--navigation-easing) both;
+  z-index: 1;
+}
+
+::view-transition-new(.nav-page-forward) {
+  animation: navigation-forward-new var(--navigation-duration)
+    var(--navigation-easing) both;
+  z-index: 2;
+}
+
+::view-transition-old(.nav-page-back),
+::view-transition-old(.nav-page-flow-exit) {
+  animation: navigation-back-old var(--navigation-duration)
+    var(--navigation-easing) both;
+  z-index: 2;
+}
+
+::view-transition-new(.nav-page-back),
+::view-transition-new(.nav-page-flow-exit) {
+  animation: navigation-back-new var(--navigation-duration)
+    var(--navigation-easing) both;
+  z-index: 1;
+}
+
+::view-transition-old(.nav-page-flow-completion) {
+  animation: navigation-completion-old var(--navigation-duration)
+    var(--navigation-easing) both;
+}
+
+::view-transition-new(.nav-page-flow-completion) {
+  animation: navigation-completion-new var(--navigation-duration)
+    var(--navigation-easing) both;
+}
+
+@keyframes navigation-forward-old {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0.94;
+    transform: translateX(-12%);
+  }
+}
+
+@keyframes navigation-forward-new {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navigation-back-old {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes navigation-back-new {
+  from {
+    opacity: 0.94;
+    transform: translateX(-12%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navigation-completion-old {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-3%);
+  }
+}
+
+@keyframes navigation-completion-new {
+  from {
+    opacity: 0;
+    transform: translateX(3%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(.nav-page-forward),
+  ::view-transition-group(.nav-page-back),
+  ::view-transition-group(.nav-page-flow-exit),
+  ::view-transition-group(.nav-page-flow-completion),
+  ::view-transition-old(.nav-page-forward),
+  ::view-transition-new(.nav-page-forward),
+  ::view-transition-old(.nav-page-back),
+  ::view-transition-new(.nav-page-back),
+  ::view-transition-old(.nav-page-flow-exit),
+  ::view-transition-new(.nav-page-flow-exit),
+  ::view-transition-old(.nav-page-flow-completion),
+  ::view-transition-new(.nav-page-flow-completion) {
+    animation-duration: 1ms;
+    animation-name: navigation-reduced-motion;
+  }
+}
+
+@keyframes navigation-reduced-motion {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
 }

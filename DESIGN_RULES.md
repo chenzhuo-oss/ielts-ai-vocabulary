@@ -124,7 +124,7 @@
 - 同语义组件必须共享相同 padding 和 gap。
 - 不为了机械统一消灭层级：内部小间距、模块间距和大区块间距应保持不同节奏。
 - 新增布局不得随意使用 13、15、18、22、27、30、34 等零散值。
-- Figma 中保留的非 4pt 例外仅用于光学对齐、插画 overlap、紧凑 sticker 高度及底部锚定，见第 14 节。
+- Figma 中保留的非 4pt 例外仅用于光学对齐、插画 overlap、紧凑 sticker 高度及底部锚定，见第 17 节。
 
 ## 5. Radius & Border
 
@@ -174,6 +174,7 @@
 
 - 40 × 40px、圆形、1.5px 黑色描边，图标居中。
 - Daily Learning、Word Detail、Extra Session 保持同一组件，不在页面间重画。
+- Daily Learning 点击 Back Button 后显示 Learn Exit Confirmation Modal；Back Button 本身的尺寸、位置与视觉不变。
 
 ## 7. Tags / Chips
 
@@ -281,6 +282,8 @@ IP 与 sticker 可做 optical adjustment，但必须避免遮挡正文、进度�
 | Word Detail Browse Mode | 大单词与音标 | 中文释义与浏览内容 | Collocations、Examples、Synonyms、AI 区域、浏览模式提示 | 返回 Vocabulary List；无学习流程 CTA |
 | AI Learning Assistant | AI 助手身份与 Welcome / Hero | 自动生成的用户请求与 AI Reply | 当前词 Context、Success 风险提示 | Back；Error 时“再试一次”；底部 composer 禁用 |
 
+Daily Learning 的退出确认是覆盖在 Learn 页面之上的临时 Modal 状态，不是独立页面，不改变上述页面层级。
+
 ## 12. Word Detail Rules
 
 - Section 使用 `01 / 02 / 03 / 04` 编号体系，编号是阅读导航，不是装饰标签。
@@ -364,7 +367,178 @@ IP 与 sticker 可做 optical adjustment，但必须避免遮挡正文、进度�
 - 页面底部保留禁用 composer，推荐文案“更多 AI 学习能力即将开放”。
 - composer 不显示可用键盘态、发送按钮或可输入光标，不暗示多轮聊天、开放提问或 chatbot 能力。
 
-## 13. Bottom Sheet Rules
+## 13. Modal / Dialog Rules
+
+### Learn Exit Confirmation Modal
+
+该 Modal 用于用户从 Daily Learning 退出到 Home 前的轻量确认。视觉语义是“可惜、轻度挽留、明确进度会保留”，不是 destructive warning、danger alert 或 system error。
+
+#### 尺寸与定位
+
+- 标准视觉尺寸：300 × 380px，不随内容自由拉高。
+- 在 viewport 中水平、垂直居中；常规移动设备上不得拉伸为宽屏 Dialog 或 Bottom Sheet。
+- 极窄设备允许使用 `max-width: calc(100vw - 32px)` 作为安全限制，同时保持标准比例与居中关系。
+- Modal 内部按 4pt Grid 组织，推荐节奏为：顶部 20–24px → IP 90–110px → 8–12px → 标题 → 8px → 说明 → 20–24px → 按钮行 → 底部 20–24px。
+
+#### Surface 与 Overlay
+
+- Modal 使用白色或现有暖白 surface，复用最接近的 Main Card / Modal 大圆角语言和轻阴影。
+- 不同时叠加强描边与强阴影，不使用玻璃拟态、科技渐变、危险红色或警告黄。
+- Overlay 为全屏半透明黑色遮罩；背景 Learn 页面仍可隐约辨认，但不可与 Modal 争夺视觉焦点。
+- 不使用重度 blur、大面积黑屏、红色 overlay 或复杂动态背景。
+
+#### 内容结构与文字
+
+内容自上而下固定为：IP Illustration → 标题 → Supporting Copy → Action Buttons，整体居中。不得增加第三段说明、信息列表、warning icon 或额外状态标签。
+
+- 标题“确定退出学习吗？”：Noto Sans SC、现有中文标题层级、Bold、Primary Black、居中；不得放大成警告标题。
+- 说明“今天的学习进度会保留，你可以稍后继续。”：使用现有正文 / 辅助正文体系，颜色弱于标题，保持清晰自然行高；视觉上优先断为两行，不使用微型字号。
+
+#### IP Illustration
+
+- 使用现有同一只黑鹅：黑色主体、圆胖体型、橙色嘴和脚、粉色腮红，保持现有头身结构与角色身份。
+- 风格继续为 flat illustration / soft dimensional；允许轻微层次与体积感，但不做真实 3D、vinyl / plastic toy、强反光、写实灯光或强 specular highlight。
+- 情绪关键词为“可惜、舍不得、轻度挽留、不施压”。可以轻微垂眼、抿嘴、歪头、身体前倾并伸出一只翅膀，表达“真的要走了吗？”。
+- 不使用眼泪、哭泣、崩溃、生气、强烈委屈、夸张悲伤或责备感。
+- 视觉高度约 90–110px，完整位于 Modal 内，不遮挡正文和按钮，也不复杂 overlap 到 Modal 外。
+
+#### Action Buttons
+
+- 两个按钮横向同排、同高、baseline 对齐，间距使用 12px；顺序固定为左侧“退出学习”、右侧“继续学习”。
+- 第一版优先等宽；若指定 Figma 需要轻微增强 Primary，宽度比例可约为 0.9 : 1.1，但不得形成悬殊尺寸。
+- “退出学习”为 Secondary / Weak Action：白色或暖白浅底、轻描边、黑色或深灰文字；不得使用红色或 destructive style。
+- “继续学习”为 Primary Action：复用现有黑底白字 Primary CTA 语言，视觉权重高于左侧按钮，但不使用动画、夸张尺寸或强烈颜色施压。
+- 两个按钮继续使用现有 Button 字体与 radius。
+
+#### Visual Priority 与限制
+
+阅读顺序为：IP 情绪 → 标题 → 进度保留说明 → 继续学习 → 退出学习。IP 是情绪入口，但不能抢过标题和 CTA。
+
+当前只定义 Modal Open 状态，不写死复杂动画。未来如需过渡，只允许轻量 fade、small scale 或 opacity；禁止 bounce、shake、强 spring、IP 大幅运动或警告式震动。
+
+不得加入右上角关闭按钮、红色 warning icon、destructive red CTA、第三个按钮、“不再提醒”、倒计时、toast、checkbox、大面积警告黄、AI 风格渐变、Chatbot 视觉或 Bottom Sheet。
+
+## 14. Page Shell System
+
+Page Shell System 统一页面的滚动责任、持续可见区域与设备安全区，不改变页面现有视觉语言、内容层级、Back target、Navigation Intent 或业务状态。按页面语义使用以下三类 Shell，不把 Sticky Top + Sticky Bottom 机械应用到所有页面。
+
+### 14.1 Standard Content Shell
+
+适用于 Pack Detail、Vocabulary List，以及其他有 Back Button、但没有持续底部操作的普通内容页：
+
+```text
+Sticky Top Navigation
++
+Scrollable Content
+```
+
+- Sticky Top 使用当前页面背景 / surface，与内容容器对齐，保持 Back Button 持续可见。
+- 继续复用现有共享 Back Button：40 × 40px、圆形、1.5px 黑色描边、图标居中；不重新设计按钮。
+- 顶部区域不做成新的重型传统 AppBar。可使用极轻 divider 或完整背景 surface 防止正文视觉穿透，不使用强 shadow。
+- 内容通过与顶部实际高度匹配的 inset / padding 正确避让，不使用巨大 spacer。
+- 优先使用 document/page scroll，不建立不必要的双层滚动。
+
+### 14.2 Word Detail Shell
+
+Learning Mode 结构为 Sticky Top Navigation / Progress + Scrollable Content + Sticky Bottom Primary CTA。顶部与底部都是当前 Word Detail route 的组成部分，不是全 App overlay。
+
+- Sticky Top 继续沿用现有 Word Detail Header、Progress 与共享 Back Button，不重画视觉。
+- 中间内容保持现有 Meaning、Collocations、Examples、Synonyms、AI Entry 的左右 padding、卡片和间距，只有一个主要纵向滚动区域。
+- Bottom Action Surface 使用当前页面背景 / 暖白，按钮复用现有 Primary CTA，与内容容器左右对齐且不 full bleed。
+- Bottom Action 可使用非常轻的 top separation；禁止强阴影、黑色底栏、glass effect 或 gradient toolbar。
+- 使用 `env(safe-area-inset-bottom)` 避让 Home Indicator，不能压缩按钮本身。
+- 内容区保留与 Bottom Action 实际占位匹配的 bottom inset，确保最后一个 section 完整可见；不以大块空白代替。
+- 短内容时 CTA 仍位于 viewport 底部；长内容时 CTA 持续可见且正文自然滚动。
+- Browse Mode 使用相同 Sticky Top 与内容视觉，但不渲染 Bottom Action Surface，不新增“下一个单词”。页面底部仍保留正常 safe area 与阅读留白。
+
+### 14.3 AI Assistant Shell
+
+AI Assistant 使用 Sticky Hero + Scrollable AI Content + Sticky Bottom Composer。
+
+- Sticky Hero 是完整浅蓝 AI identity surface，包括 Back Button、Hero copy、Supporting Copy、IP Illustration 与现有背景视觉，不是只有 Back Button 吸顶。
+- Hero 以自身完整背景遮挡下方 scrolling content；不让正文从 Hero 前方穿过，不增加强 shadow。
+- 中间 AI Content 保留 Current Word、User Bubble、AI Reply、Disclaimer 的既有宽度、padding、card visual 与 spacing，本规则不重新设计内容。
+- Composer 保持当前 disabled visual 与文案，使用自己的背景 surface 和 `env(safe-area-inset-bottom)`，持续位于 viewport 底部，不开放输入能力。
+- 中间内容必须有与 Composer 实际高度匹配的 bottom inset，最后一段 Reply / Disclaimer 不得被遮挡。
+- Loading、Success、Error 共用同一三层结构；Success Top / Scrolled 仅代表中间内容的不同滚动位置。
+- 低高度 viewport 使用静态 responsive compression：适度减少 Hero vertical padding、IP size 与内部 gap；不得隐藏 IP、删除 Hero 文案、只保留 Back Button，或增加滚动折叠 Hero。
+
+### 14.4 Safe Area、Viewport 与滚动责任
+
+- Sticky Top / Sticky Hero 叠加 `env(safe-area-inset-top)`，避免 iPhone 刘海、Dynamic Island 与 PWA standalone 状态区遮挡；Desktop 不因此产生巨大顶部 padding。
+- Sticky Bottom CTA / Composer 叠加 `env(safe-area-inset-bottom)`；按钮和 Composer 本体尺寸保持不变。
+- 三类 Shell 至少满足 `min-height: 100dvh`，可滚动区域按 viewport 自动计算；禁止使用固定 `812px`、`844px`、`932px` 页面高度模拟设备。
+- Standard Content Shell 优先 document/page scroll；Word Detail 只保留一个正文滚动区域；AI Assistant 允许一个明确的中间独立 scroll region。
+- 禁止同一页面同时出现互相竞争的 document scroll、整页 inner scroll 与 section scroll。
+
+### 14.5 Responsive 验收矩阵
+
+至少覆盖：Mobile `375 × 667`、`390 × 844`、`430 × 932`；Tablet `768 × 1024`；Desktop `1280 × 800`、`1440 × 900`。
+
+- Standard：Back Button 持续可见，内容未被顶部遮挡。
+- Word Detail：Top 与 CTA 持续可见，正文可完整滚动且最后一段不被遮挡。
+- AI Assistant：Hero、Content、Composer 三层同时成立，小高度设备仍有合理中间阅读空间。
+
+### 14.6 Page Mapping
+
+| Page | Shell |
+|---|---|
+| Home | Existing Home Shell |
+| Learn | Existing Learning Shell；现有布局保持 |
+| Pack Detail | Standard Content Shell |
+| Vocabulary List | Standard Content Shell |
+| Word Detail Learning | Word Detail Shell |
+| Word Detail Browse | Word Detail Shell without Bottom CTA |
+| AI Assistant | AI Assistant Shell |
+| Completion | Existing Completion Shell |
+| Extra Complete | Existing Completion-style Shell |
+
+Home 不增加 Back，Completion 不增加普通 Back 或普通 Sticky CTA。Sticky Top、Sticky Bottom 与 Sticky Hero 必须保留在当前 route 的 NavigationShell 内，并作为统一 page surface 参与 Forward / Back / Flow 转场，不得成为跨路由全局 Overlay。
+
+## 15. Navigation Motion
+
+Navigation motion 是统一的页面反馈层，不改变页面层级、内容或产品行为。具体导航类型与目标以 `PRODUCT_SPEC.md` 的 Global Navigation Motion 及 Route Motion Matrix 为准。
+
+### 15.1 Forward Transition
+
+进入更深层页面时，新页面从右侧进入正常位置：`translateX(100%) → 0`。原页面从 `0` 向左轻微退后，建议约 `-10% ～ -15%`，不高速完整飞出。该组合用于建立“进入下一层”的空间方向感。
+
+### 15.2 Back Transition
+
+返回上一层时，当前页面从 `0 → 100%` 向右离开；上一层页面从约 `-10% ～ -15% → 0` 恢复。Forward 与 Back 必须保持成对且方向一致，不允许各页面自行定义相反方向。
+
+### 15.3 Duration 与 Easing
+
+- 页面转场推荐 `220–280ms`，优先约 `240–260ms`，除非后续体验验证有明确依据，否则不得超过 `350ms`。
+- 使用自然、快速收敛的 ease-out 或产品统一的 standard mobile easing；点击后必须立即产生反馈，尾部自然减速。
+- 若项目已有 motion token，优先复用，不新增多套 easing。
+- 禁止 `500ms+` 慢动画、bounce、夸张 spring、overshoot、强烈缩放或旋转。
+
+### 15.4 Custom Edge Swipe Back 边界
+
+**Custom Edge Swipe Back: Not implemented in current version.**
+
+当前版本不定义或实现 interactive swipe、pointer/touch drag、edge trigger、distance/velocity threshold、跟手位移、释放完成、取消回弹或鼠标拖拽模拟手势。页面左右转场只服务于产品内 Back Button、CTA、Card、Link 等点击导航。
+
+应用不得通过自定义视觉层主动拦截或覆盖 iOS Safari、Android 或浏览器提供的原生返回手势；原生返回行为不套用 App 自定义 drag visual。
+
+### 15.5 Flow Exit 与 Flow Completion
+
+Learn 是特殊 Flow Exit。点击 Learn Back Button 时先打开已有 Exit Confirmation Modal，不立即播放 route transition；点击“继续学习”只关闭 Modal，点击“退出学习”后才执行接近普通 Back 的 `flow-exit` 页面转场。
+
+Modal 继续保持 center modal 视觉，可使用轻量 opacity fade 与极小 scale 进入，不作为横向滑入的 route page。Modal 的尺寸、Overlay、IP、渐变与按钮规则继续以第 13 节和最新 Figma 为准。
+
+Completion / Extra Complete → Home 使用 `flow-completion`：采用轻量 fade 与 minimal horizontal motion，保持中性，不表现为返回未完成学习页，也不加入复杂庆祝转场。
+
+### 15.6 Reduced Motion
+
+必须支持 `prefers-reduced-motion`：
+
+- 页面转场大幅减少水平位移，可改为极短 fade 或 minimal motion；
+- 导航结果、返回目标与确认流程保持不变；
+- Reduced Motion 不能移除 Back Button、CTA 或破坏导航可用性。
+
+## 16. Bottom Sheet Rules
 
 Learning Plan 使用 Bottom Sheet，不跳转独立设置页。
 
@@ -378,7 +552,7 @@ Learning Plan 使用 Bottom Sheet，不跳转独立设置页。
 - 保存 CTA：350 × 58px；与说明之间保留 64px；底部安全区 48px。
 - 设置场景整体比 Home、Completion 更克制，默认不使用大型 IP。
 
-## 14. Responsive / Layout Principles
+## 17. Responsive / Layout Principles
 
 - 当前移动端主画板：`390 × 844px`。
 - 页面主内容最大宽度：`350px`。
@@ -394,7 +568,7 @@ Learning Plan 使用 Bottom Sheet，不跳转独立设置页。
   - Bottom Sheet `y = 210px`：由 634px 高度底部锚定于 844px 画板所得；
   - IP 与 sticker 的少量非网格坐标：用于视觉重心、探头和手势 overlap。
 
-## 15. Do / Don’t
+## 18. Do / Don’t
 
 ### DO
 
@@ -419,7 +593,7 @@ Learning Plan 使用 Bottom Sheet，不跳转独立设置页。
 - 为装饰加入无意义英文标签，或让英文标签比中文信息更抢眼。
 - 把 Home、Word Detail 或 Completion 做成数据 Dashboard。
 
-## 16. 文档职责与开发使用
+## 19. 文档职责与开发使用
 
 - **`PRODUCT_SPEC.md`**：产品逻辑、数据与状态定义、交互规则、流程边界。
 - **`DESIGN_RULES.md`**：视觉语言、颜色、字体、组件、版式、间距与 IP 使用规范。

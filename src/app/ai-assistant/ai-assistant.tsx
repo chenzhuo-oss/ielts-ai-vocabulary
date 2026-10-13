@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { AppLink } from "@/components/navigation/app-link";
 import backIcon from "@/assets/ai-assistant-back.svg";
 import bubbleTail from "@/assets/ai-assistant-bubble-tail.svg";
 import heroArtwork from "@/assets/ai-assistant-hero.png";
@@ -16,11 +16,34 @@ import styles from "./ai-assistant.module.css";
 type AIAssistantStatus = "loading" | "success" | "error";
 type InterchangeabilityLevel = "yes" | "partial" | "no";
 
+const MINIMUM_LOADING_DURATION_MS = 2000;
+
 const levelLabels: Record<InterchangeabilityLevel, string> = {
   yes: "可以互换",
   partial: "部分可以互换",
   no: "不建议互换",
 };
+
+function waitForMinimumLoadingDuration(
+  startedAt: number,
+  signal: AbortSignal,
+): Promise<void> {
+  const remaining = Math.max(
+    0,
+    MINIMUM_LOADING_DURATION_MS - (performance.now() - startedAt),
+  );
+  if (remaining === 0 || signal.aborted) return Promise.resolve();
+
+  return new Promise((resolve) => {
+    const finish = () => {
+      window.clearTimeout(timer);
+      signal.removeEventListener("abort", finish);
+      resolve();
+    };
+    const timer = window.setTimeout(finish, remaining);
+    signal.addEventListener("abort", finish, { once: true });
+  });
+}
 
 function LoadingReply() {
   return (
@@ -91,6 +114,7 @@ export function AIAssistant({
   const requestComparison = useCallback(async () => {
     if (pendingRef.current) return;
 
+    const startedAt = performance.now();
     pendingRef.current = true;
     setStatus("loading");
     const controller = new AbortController();
@@ -110,11 +134,15 @@ export function AIAssistant({
       const payload = (await response.json()) as { comparison?: SynonymComparison };
       if (!payload.comparison) throw new Error("EMPTY_AI_RESULT");
 
+      await waitForMinimumLoadingDuration(startedAt, controller.signal);
+      if (controller.signal.aborted) return;
       setComparison(payload.comparison);
       setStatus("success");
     } catch (error) {
       if (controller.signal.aborted) return;
       console.error("AI synonym comparison request failed", error);
+      await waitForMinimumLoadingDuration(startedAt, controller.signal);
+      if (controller.signal.aborted) return;
       setComparison(null);
       setStatus("error");
     } finally {
@@ -153,51 +181,59 @@ export function AIAssistant({
           <h1 id="ai-assistant-title">嗨，我是你的<br />AI 学习助手</h1>
           <p>可以陪你一起理解词义、<br />辨析用法、分析例句和搭配。</p>
         </div>
+        <header className={styles.topBar}>
+          <AppLink
+            className={styles.backButton}
+            href={safeReturnTo}
+            intent="back"
+            source="ai-assistant"
+            fallback={`/words/${encodeURIComponent(targetWord)}`}
+            aria-label="返回单词详情"
+          >
+            <Image src={backIcon} alt="" />
+          </AppLink>
+        </header>
       </section>
 
-      <header className={styles.topBar}>
-        <Link className={styles.backButton} href={safeReturnTo} aria-label="返回单词详情">
-          <Image src={backIcon} alt="" />
-        </Link>
-      </header>
-
       <div className={styles.contentSurface}>
-        <div className={styles.contextBar}>
-          <section className={styles.context} aria-label="当前单词">
-            <span>当前单词</span>
-            <strong lang="en">{targetWord}</strong>
-          </section>
-        </div>
-
         <div className={styles.conversationScroll}>
-          <section className={styles.userMessage} aria-label="自动生成的学习请求">
-            <p>帮我区分 {comparisonWords.join("、")}，并告诉我哪些场景可以互换、哪些不能。</p>
-          </section>
+          <div className={styles.contextBar}>
+            <section className={styles.context} aria-label="当前单词">
+              <span>当前单词</span>
+              <strong lang="en">{targetWord}</strong>
+            </section>
+          </div>
 
-          <section className={styles.replyRow} aria-label="AI 回复">
-            <div className={styles.avatarShell}>
-              <Image src={replyGoose} alt="正在回答的黑鹅学习助手" className={styles.replyAvatar} />
-            </div>
-            <div className={`${styles.replyCard} ${styles[status]}`}>
-              <Image src={bubbleTail} alt="" className={styles.bubbleTail} />
-              <div className={styles.replyHeader}>
-                <span>AI</span>
-                <h2>近义词辨析</h2>
-              </div>
-              <div className={styles.replyBody}>
-                {status === "loading" && <LoadingReply />}
-                {status === "success" && comparison && <SuccessReply comparison={comparison} />}
-                {status === "error" && <ErrorReply onRetry={retry} />}
-              </div>
-            </div>
-          </section>
+          <div className={styles.conversationBody}>
+            <section className={styles.userMessage} aria-label="自动生成的学习请求">
+              <p>帮我区分 {comparisonWords.join("、")}，并告诉我哪些场景可以互换、哪些不能。</p>
+            </section>
 
-          {status === "success" && (
-            <p className={styles.disclaimer}>
-              <span aria-hidden="true">i</span>
-              AI 内容可能存在偏差，请结合上下文判断。
-            </p>
-          )}
+            <section className={styles.replyRow} aria-label="AI 回复">
+              <div className={styles.avatarShell}>
+                <Image src={replyGoose} alt="正在回答的黑鹅学习助手" className={styles.replyAvatar} />
+              </div>
+              <div className={`${styles.replyCard} ${styles[status]}`}>
+                <Image src={bubbleTail} alt="" className={styles.bubbleTail} />
+                <div className={styles.replyHeader}>
+                  <span>AI</span>
+                  <h2>近义词辨析</h2>
+                </div>
+                <div className={styles.replyBody}>
+                  {status === "loading" && <LoadingReply />}
+                  {status === "success" && comparison && <SuccessReply comparison={comparison} />}
+                  {status === "error" && <ErrorReply onRetry={retry} />}
+                </div>
+              </div>
+            </section>
+
+            {status === "success" && (
+              <p className={styles.disclaimer}>
+                <span aria-hidden="true">i</span>
+                AI 内容可能存在偏差，请结合上下文判断。
+              </p>
+            )}
+          </div>
         </div>
 
         <footer className={styles.composerArea}>

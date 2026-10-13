@@ -315,6 +315,152 @@ v0.1 每个词表 Item 只展示：
 
 ---
 
+### Global Navigation Motion
+
+Navigation motion 只为现有页面层级补充方向感与操作反馈，不改变信息架构、路由目标、Session、学习状态或任何业务规则。产品内导航保留四种统一语义：
+
+1. **Forward Navigation**：进入更深一层内容或任务。使用 forward transition，新页面从右侧进入，当前页面向左轻微退后，并正常增加 history 层级。例如 Home → Learn、Home → Pack Detail、Pack Detail → Vocabulary List、Vocabulary List → Word Detail、Learn → Word Detail、Word Detail → AI Learning Assistant。
+2. **Back Navigation**：返回同一信息或学习结构中的上一层。使用 back transition，当前页面向右离开，上一层页面从左侧轻微位置恢复；不得创建新的 history 层级。返回目标优先依据现有 route、session 与入口上下文，不得把所有 Word Detail 硬编码为同一个返回目标。
+3. **Flow Exit**：离开仍在进行的学习流程。它不是普通 Back Navigation，必须遵守已有退出确认与 Session 安全边界。
+4. **Flow Completion**：从已经完成的流程返回。它保留独立导航语义，并遵守现有完成结算与防重复结算规则。
+
+#### Custom Edge Swipe Back
+
+**Custom Edge Swipe Back: Not implemented in current version.**
+
+当前版本不实现 App 自定义的屏幕边缘返回手势，不监听或处理用于返回导航的 `pointer` / `touch` drag，不定义 edge trigger、拖拽跟手、距离或速度 threshold、释放完成、取消回弹等交互。
+
+产品继续使用现有 Back Button、CTA 与其他可见导航控件完成返回或退出。Forward / Back 页面左右转场只由产品内点击导航触发；不在桌面端通过鼠标拖拽模拟 swipe。
+
+此决定用于避免与 iOS Safari 原生 back swipe、Android 系统边缘返回手势冲突，并降低手势、history 与业务状态同步的维护复杂度。
+
+#### Learn 的 Flow Exit
+
+Learn → Home 是退出正在进行的学习流程，不是普通 Back Navigation。用户点击 Learn Back Button 时，继续使用现有 Exit Confirmation：
+
+1. 点击 Back Button 后先在 Learn 页面上打开 Exit Confirmation Modal；
+2. 不提前展示或导航到 Home；
+3. 只有点击 Modal 中“退出学习”后，才以 `flow-exit` 语义返回 Home。
+
+Modal 中“继续学习”关闭 Modal 并留在 Learn，Session 与进度不变；“退出学习”返回 Home，同时保留 Session、`currentIndex` 与已发生的学习记录，不触发 Completion，也不增加 check-in。
+
+#### 来源感知的 Back Navigation
+
+Word Detail 的返回目标由进入来源决定：从 Learn 进入时通过 Back Button 返回 Learn；从 Vocabulary List 以 Browse Mode 进入时通过 Back Button 返回对应 Vocabulary List。两者均为普通 Back Navigation，不触发 Learn Exit Confirmation，也不得按 `vocabulary.json` 顺序或固定路径猜测返回目标。
+
+AI Learning Assistant 是 Word Detail 的下一层。Loading、Success、Error 三种状态均使用相同规则：通过 Back Button 返回来源 Word Detail，不弹退出学习确认。
+
+词包浏览层级为 Home → Pack Detail → Vocabulary List → Word Detail。进入下一层使用 Forward Navigation；Vocabulary List → Pack Detail、Pack Detail → Home 及 Browse Mode Word Detail → Vocabulary List 使用 Back Navigation。
+
+#### Completion 与 Extra Session 边界
+
+Completion → Home 是 **Flow Completion Action**，由现有“返回首页”CTA 执行，不定义为浏览意义上的 Back Navigation。Completion 不提供返回已结算 Learn Session 的自定义手势或普通 Back 控件。
+
+Extra Session 是独立学习流程。其可见退出操作继续遵守已有的 Extra 返回与 Session safety 语义，不通过自定义手势增加另一套退出路径，也不得绕过已有确认或状态保护。
+
+#### Browser / System Back 边界
+
+本节只定义产品内点击导航产生的页面转场。**Browser / system native back gestures are not overridden by the app.** 应用不主动拦截、接管或覆盖浏览器 Back、Android system Back、iOS Safari 原生 history swipe 等平台返回能力，也不修改 history architecture 来模拟自定义边缘返回。
+
+#### Route Motion Matrix
+
+| From | To | Navigation Type | Click Transition |
+|---|---|---|---|
+| Home | Learn | Forward | 新页面 Right → 0；Home 轻微向左 |
+| Learn | Word Detail | Forward | 新页面 Right → 0；Learn 轻微向左 |
+| Word Detail（来源为 Learn） | Learn | Back | 当前页向右退出；Learn 恢复 |
+| Learn | Home | Flow Exit | Back Button 先打开 Exit Confirmation；确认退出后执行接近 Back 的转场 |
+| Word Detail | AI Learning Assistant | Forward | 新页面 Right → 0；详情页轻微向左 |
+| AI Learning Assistant | 来源 Word Detail | Back | 当前页向右退出；详情页恢复 |
+| Home | Pack Detail | Forward | 新页面 Right → 0；Home 轻微向左 |
+| Pack Detail | Vocabulary List | Forward | 新页面 Right → 0；Pack Detail 轻微向左 |
+| Vocabulary List | Word Detail（Browse Mode） | Forward | 新页面 Right → 0；词表轻微向左 |
+| Word Detail（Browse Mode） | 对应 Vocabulary List | Back | 当前页向右退出；词表恢复 |
+| Vocabulary List | Pack Detail | Back | 当前页向右退出；Pack Detail 恢复 |
+| Pack Detail | Home | Back | 当前页向右退出；Home 恢复 |
+| Completion | Home | Flow Completion | 轻量 fade + minimal horizontal motion |
+| Extra Session | 既有退出目标 | Flow Exit | 遵守已有 Extra exit semantics 与状态保护 |
+
+## Page Shell & Persistent Navigation Areas
+
+Page Shell 只定义页面结构、滚动责任与持续可见区域，不改变业务逻辑、页面层级、Navigation Intent、Back target、route fallback、Flow Exit、Flow Completion、Session、Learning State、AI state、Completion、Extra Session 或 Browse Mode 规则。不同页面必须按产品语义选用对应 Shell，不机械套用同一布局。
+
+### Standard Content Shell
+
+适用于 Pack Detail、Vocabulary List，以及其他有 Back Button、但没有持续底部主操作的普通内容页：
+
+```text
+Viewport
+├── Sticky Top Navigation
+└── Scrollable Page Content
+```
+
+Back Button 所在顶部导航区域保持在当前 viewport 顶部；正文滚动时 Back Button 不随内容离开视口。Sticky 只改变位置行为，返回目标和导航语义继续由页面现有上下文决定。
+
+正文使用正常的单一纵向滚动，不建立不必要的 document scroll + inner scroll 双层结构。内容必须通过合理 top inset / padding 避让 Sticky Top Navigation，不得被覆盖或裁切，也不得用巨大无意义 spacer 补偿。
+
+Home 是 root 页面，不增加普通 Back Button 或 Standard Sticky Back。Completion 是 Flow Completion 状态，不因本规则增加普通 Back Button，并保持现有信息架构。
+
+### Word Detail Shell
+
+Word Detail Learning Mode 使用：
+
+```text
+Viewport
+├── Sticky Top Navigation / Progress
+├── Scrollable Word Content
+└── Sticky Bottom Primary Action
+```
+
+顶部持续区域包含现有 Back Button、Progress 与 Header 信息。用户滚动 Meaning、Collocations、Example Sentences、Synonyms、AI Entry、Source 或其他现有内容时，返回入口仍然可见；其来源感知规则保持不变：Learn 来源返回对应 Learn，Browse 来源返回 Vocabulary List，Direct URL 使用现有安全 fallback。
+
+正文只有一个主要纵向滚动区域，位于持续顶部与底部操作之间；不得为各 section 创建独立 scroll。学习模式 Main / Extra 持续显示当前 Primary CTA：普通状态为“下一个单词”，最后一个 Item 继续执行现有 Completion / Extra Completion 行为。CTA 位于当前 viewport 底部，用户无需滚动到整篇文档末尾才能继续。
+
+Sticky Bottom CTA 不得遮挡正文。最后一个 section 必须能完整滚动到 CTA 上方，通过与实际 CTA surface 匹配的 bottom content inset / padding 处理，不用大块无意义空白。短内容不足一屏时 CTA 仍停留在 viewport 底部；长内容时 CTA 持续可见，正文自然滚动。
+
+Word Detail Browse Mode 使用相同 Sticky Top 与 Scrollable Content，但不显示 Sticky Bottom Primary CTA；不得因 Shell 统一增加“下一个单词”或其他学习流程操作。
+
+### AI Assistant Shell
+
+AI Learning Assistant 是特殊页面，不套用普通 Sticky Back + document scroll：
+
+```text
+Viewport
+├── Sticky AI Hero
+├── Scrollable AI Content
+└── Sticky Bottom Composer
+```
+
+Sticky Hero 是完整 AI 身份区，而不只是固定 Back Button。它包含现有 Back Button、“嗨，我是你的 AI 学习助手”、Supporting Copy、黑鹅 IP / AI Illustration 与当前已验收 Hero 背景，并在 AI 内容滚动时保持在 viewport 顶部。
+
+中间 AI Content 是唯一主要滚动区域，包含 Current Word、自动生成的 User Message、AI Reply、Differences、Interchangeability、Disclaimer，以及 Loading / Error 对应内容。现有 disabled composer“更多 AI 学习能力即将开放”持续位于 viewport 底部，不随 Reply 滚至文档末尾，也不因此开放输入、键盘或多轮对话能力。
+
+Loading、Success、Error 共用同一个 AI Assistant Shell，只替换中间内容。Success Top 与 Success Scrolled 仍是同一 Success 页面不同 scroll position，不是两个业务状态；新的 Shell 下只有中间 AI Content 滚动。
+
+低高度设备仍保留完整 Sticky Hero。第一版只允许静态压缩 Hero vertical padding、IP visual size 与内部 spacing，为中间阅读区保留合理空间；不得删除 Hero 文案、隐藏 IP、折叠为只有 Back Button，或新增 scroll-triggered collapse 交互。
+
+### Safe Area、Viewport 与滚动原则
+
+所有 Shell 使用动态 viewport 语义，至少满足 `min-height: 100dvh`，不以 `812px`、`844px`、`932px` 等设备高度硬编码页面。Sticky Top / Sticky Hero 必须避让 `env(safe-area-inset-top)`；Sticky Bottom CTA / Composer 必须避让 `env(safe-area-inset-bottom)`，且 safe area 不压缩按钮或 composer 本体。
+
+Standard Content Shell 优先使用 document/page scroll。Word Detail 维持一个正文滚动区域并让顶部与底部持续可见。AI Assistant 明确允许中间独立 scroll region，因为 Hero 与 Composer 同时固定。不得在同一页面创建互相竞争的多层滚动容器。
+
+Sticky 区域必须属于当前 route 的 Page Shell，并随整个页面一起参与现有 Forward / Back / Flow 页面转场；不得脱离 NavigationShell 成为全局 App Overlay。
+
+### Page Shell Mapping
+
+| Page | Shell |
+|---|---|
+| Home | Existing Home Shell；不增加 Back |
+| Learn | Existing Learning Shell；保留现有布局与 Exit Confirmation |
+| Pack Detail | Standard Content Shell |
+| Vocabulary List | Standard Content Shell |
+| Word Detail Learning | Word Detail Shell；包含 Sticky Bottom CTA |
+| Word Detail Browse | Word Detail Shell；不包含 Bottom CTA |
+| AI Assistant | AI Assistant Shell |
+| Completion | Existing Completion Shell；不增加普通 Back |
+| Extra Complete | Existing Completion-style Shell |
+
 ### 5.4 Daily Learning
 
 Daily Learning 是一个统一的“今日学习 Session”，不是两套分别完成的新词流程与复习流程。今日任务由以下两类 Item 共同组成：
@@ -375,6 +521,42 @@ Review Item 来自长期复习词池。新词当天曾被标记为“不认识�
 **当前单词 → 判断认识程度 → 保存状态 → 进入 Word Detail**
 
 首次学习状态判断发生在 Daily Learning 页面。Word Detail 不是首次状态判断入口。
+
+#### Learn Exit Confirmation
+
+Daily Learning 左上角继续使用现有 Back Button。用户在 Learn 页面点击该按钮时，不立即返回 Home，而是在当前 Learn 页面上方打开“退出学习确认”Modal。Modal 打开期间，Learn 页面保留在遮罩后方；当前 Session、当前词、当前索引与学习进度均不发生变化。
+
+Modal 文案固定为：
+
+* 标题：**确定退出学习吗？**
+* 说明：**今天的学习进度会保留，你可以稍后继续。**
+* 左侧操作：**退出学习**
+* 右侧操作：**继续学习**
+
+用户点击“继续学习”时，只关闭 Modal 并留在当前 Learn 页面。这是取消退出操作：当前 Session、当前词、`currentIndex`、`todayMastered`、`dailyConsecutiveKnowCount`、`masteryDayStreak`、review state 与当前学习进度全部保持不变；不重新生成 Session，也不产生额外学习记录。
+
+用户点击“退出学习”时，关闭 Modal 并返回 Home。退出只结束当前页面停留，不结束或结算学习任务：
+
+* 当前 Daily Session、当前索引与已有学习进度必须保留
+* 已完成词、新词与复习词的状态必须保留
+* 不重新生成或清空 Daily Session、Learning State 或 review pool
+* 不改变 `todayMastered`、`dailyConsecutiveKnowCount`、`masteryDayStreak` 或已完成记录
+* 不执行 Completion settlement，不增加 check-in，也不产生额外学习结果
+
+用户之后从 Home 继续今日学习时，直接复用现有 Session restore behavior，恢复现有 Session 中真正需要继续处理的位置；本功能不建立另一套恢复机制。
+
+退出确认只覆盖 **Learn 页面 UI 内 Back Button → Home** 的导航。以下学习流程内部导航不触发退出确认：
+
+* Learn → Word Detail
+* Word Detail → Learn
+* Learn → Completion
+* Word Detail → 下一词
+* Word Detail → AI Learning Assistant
+* AI Learning Assistant → Word Detail
+
+Word Detail 自身的 Back Button 继续按现有来源上下文返回 Learn 或 Vocabulary List，不显示该 Modal。当前版本不实现自定义 Edge Swipe Back；应用也不主动拦截或覆盖浏览器 Back、iOS Safari 原生 history gesture、Android system back 或其他系统返回能力。
+
+该 Modal 只是导航确认层，不能改变 `know / unknown` 判断、`todayMastered`、`firstLearningCompleted`、`dailyConsecutiveKnowCount`、`masteryDayStreak`、review pool、Daily Session composition、Extra Session、Pack progress、`learnedWordCount`、check-in 或 Completion settlement。
 
 #### 词包级学习计划
 
@@ -501,6 +683,8 @@ v0.1 优先保证学习中的用户不被强制打断、Session 日期归属明�
 ---
 
 ### 5.5 Word Detail
+
+Word Detail 遵循全局 **Word Detail Shell**：Learning Mode 使用 Sticky Top Navigation / Progress、单一 Scrollable Word Content 与 Sticky Bottom Primary Action；Browse Mode 只使用 Sticky Top 与 Scrollable Content，不显示底部学习 CTA。该 Shell 只提升导航与主操作可达性，不改变本节任何内容、状态或下一步规则。
 
 Word Detail 是用户理解单个词汇的核心页面。
 
@@ -863,6 +1047,8 @@ v0.1 采用 Simple Rule-based Review：当天连续 3 次认识代表今日掌�
 
 ### 5.8 AI Learning Assistant / AI 学习助手
 
+AI Learning Assistant 遵循全局 **AI Assistant Shell**：完整 Hero 持续位于 viewport 顶部，AI 内容作为中间唯一主要滚动区域，disabled composer 持续位于 viewport 底部。Loading、Success、Error 共享该结构，且不改变下述请求、状态或失败处理逻辑。
+
 AI Learning Assistant 是独立的通用 AI 学习空间，不是名为“AI 近义词辨析”的单功能页面。v0.1 首个且唯一正式能力为 **Synonym Comparison / 近义词辨析**；后续可在同一能力框架中承载词义理解、例句分析与搭配分析等学习能力，但 v0.1 不提供自由聊天、多轮对话或用户主动输入。
 
 #### 入口与自动请求
@@ -878,7 +1064,7 @@ AI Learning Assistant 是独立的通用 AI 学习空间，不是名为“AI 近
 
 #### 固定页面结构
 
-页面保持同一稳定 shell：
+页面保持同一稳定内容层级，并由 AI Assistant Shell 分配为 Sticky Hero、Scrollable AI Content 与 Sticky Bottom Composer：
 
 1. Back
 2. AI Welcome / Hero

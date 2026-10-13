@@ -1,12 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Inter, Noto_Sans_SC } from "next/font/google";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { WordDetailActions } from "@/app/words/[word]/word-detail-actions";
 import learningGoose from "@/assets/daily-learning-goose-desk-v1.png";
+import { useAppNavigation } from "@/components/navigation/use-app-navigation";
 import {
   isDevelopmentLearningTestSession,
   updateSessionItem,
@@ -22,6 +21,7 @@ import {
   type LearningStatus,
 } from "@/lib/learning-state";
 import styles from "./daily-learning.module.css";
+import { LearnExitConfirmation } from "./learn-exit-confirmation";
 
 const notoSansSC = Noto_Sans_SC({
   variable: "--font-noto-sans-sc",
@@ -62,8 +62,26 @@ export function DailyLearningCard({
   wasUnknownToday,
   progress,
 }: DailyLearningCardProps) {
-  const router = useRouter();
+  const {
+    navigateFlowExit,
+    navigateForward,
+    registerExitGuard,
+  } = useAppNavigation();
   const [saving, setSaving] = useState(false);
+  const [showExitConfirmation, setShowExitConfirmation] = useState(false);
+
+  const homeHref = isDevelopmentLearningTestSession(sessionDate)
+    ? `/?sessionDate=${encodeURIComponent(sessionDate)}`
+    : "/";
+
+  const requestExitLearning = useCallback(() => {
+    setShowExitConfirmation(true);
+  }, []);
+
+  useEffect(
+    () => registerExitGuard(requestExitLearning),
+    [registerExitGuard, requestExitLearning],
+  );
 
   function selectStatus(status: LearningStatus) {
     if (saving) return;
@@ -116,8 +134,12 @@ export function DailyLearningCard({
       sessionType === "extra" && extraSessionId
         ? `sessionType=extra&extraSessionId=${encodeURIComponent(extraSessionId)}&sessionDate=${encodeURIComponent(sessionDate)}`
         : `sessionDate=${encodeURIComponent(sessionDate)}`;
-    router.push(
+    navigateForward(
       `/words/${encodeURIComponent(word.word)}?${sessionQuery}&index=${currentIndex}`,
+      {
+        source: sessionType === "extra" ? "learn-extra" : "learn-main",
+        fallback: `/learn?${sessionQuery}&index=${currentIndex}`,
+      },
     );
   }
 
@@ -145,14 +167,11 @@ export function DailyLearningCard({
     return (
       <main className={`${styles.page} ${notoSansSC.variable} ${inter.variable}`}>
         <div className={styles.canvas}>
-          <Link
-            href={
-              isDevelopmentLearningTestSession(sessionDate)
-                ? `/?sessionDate=${encodeURIComponent(sessionDate)}`
-                : "/"
-            }
+          <button
+            type="button"
             className={styles.backButton}
             aria-label="返回首页"
+            onClick={requestExitLearning}
           >
             <svg
               viewBox="0 0 18 18"
@@ -166,7 +185,7 @@ export function DailyLearningCard({
               <path d="M16 9H2" />
               <path d="m7 3.5-5.5 5.5L7 14.5" />
             </svg>
-          </Link>
+          </button>
 
           <div className={styles.progressArea}>
             <div className={styles.progressMeta} aria-label="已掌握进度">
@@ -246,6 +265,19 @@ export function DailyLearningCard({
               </button>
             </div>
           </section>
+
+          {showExitConfirmation ? (
+            <LearnExitConfirmation
+              onContinue={() => setShowExitConfirmation(false)}
+              onExit={() =>
+                navigateFlowExit(homeHref, {
+                  source:
+                    sessionType === "extra" ? "learn-extra" : "learn-main",
+                  fallback: homeHref,
+                })
+              }
+            />
+          ) : null}
         </div>
       </main>
     );

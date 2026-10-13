@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import { useEffect, useState } from "react";
+import { AppLink } from "@/components/navigation/app-link";
 import celebrationGoose from "@/assets/completion-goose-celebration-v1.png";
 import ctaAccent from "@/assets/completion-cta-accent.svg";
 import {
@@ -57,10 +57,10 @@ function EmptyState({
       <section className={styles.emptyState}>
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link href={href} className={styles.primaryButton}>
+        <AppLink href={href} intent="back" source="completion" fallback="/" className={styles.primaryButton}>
           <Image src={ctaAccent} alt="" aria-hidden="true" />
           <span>{action}</span>
-        </Link>
+        </AppLink>
       </section>
     </main>
   );
@@ -163,10 +163,16 @@ export function CompletionClient({ sessionDate }: { sessionDate?: string }) {
           </div>
         </section>
 
-        <Link href={homeHref} className={styles.backHomeButton}>
+        <AppLink
+          href={homeHref}
+          intent="flow-completion"
+          source="completion"
+          fallback="/"
+          className={styles.backHomeButton}
+        >
           <Image src={ctaAccent} alt="" aria-hidden="true" />
           <span>返回首页</span>
-        </Link>
+        </AppLink>
       </div>
     </main>
   );

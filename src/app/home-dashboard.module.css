@@ -7,7 +7,8 @@
   --review-yellow-soft: rgba(255, 209, 46, 0.38);
   --emotion-pink: #ff78a8;
   --secondary: #4b4d47;
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: var(--surface);
   color: var(--black);
   font-family: var(--font-noto-sans-sc), sans-serif;
@@ -16,10 +17,11 @@
 .canvas {
   position: relative;
   width: 100%;
-  max-width: 390px;
-  min-height: max(844px, 100svh);
+  max-width: var(--page-max-width);
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: clip;
   background: var(--surface);
 }
 
@@ -204,11 +206,10 @@
 }
 
 .todaySection {
-  position: absolute;
-  top: 358px;
-  left: 20px;
-  width: calc(100% - 40px);
+  position: relative;
+  width: auto;
   min-height: 322px;
+  margin: 20px var(--page-gutter) max(40px, env(safe-area-inset-bottom));
 }
 
 .todayHeadingRow {
@@ -234,13 +235,21 @@
   line-height: normal;
 }
 
+.packArea {
+  margin: 33px var(--page-gutter) 0;
+}
+
+.packAreaCompleted {
+  margin-top: 32px;
+}
+
 .packSummary {
   position: relative;
   display: flex;
   width: 100%;
   height: 40px;
   align-items: center;
-  margin-top: 14px;
+  margin: 0;
   border: 0;
   border-radius: 20px;
   background: var(--warm-white);
@@ -285,7 +294,7 @@
   display: flex;
   height: 82px;
   align-items: baseline;
-  margin-top: 20px;
+  margin-top: 7px;
 }
 
 .progressSummary strong {
@@ -411,7 +420,7 @@
   width: 100%;
   height: 102px;
   align-items: center;
-  margin-top: 18px;
+  margin: 0;
   border: 0;
   border-radius: 18px;
   background: var(--warm-white);
@@ -464,12 +473,9 @@
   right: 17px;
 }
 
-.todaySectionStageComplete .progressSummary {
-  margin-top: 16px;
-}
-
 .loading {
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: white;
   padding: 40px 20px;
   color: #4b4d47;
@@ -491,7 +497,7 @@
   }
 
   .canvas {
-    min-height: 844px;
+    min-height: calc(100dvh - 48px);
     border-radius: 34px;
   }
 }

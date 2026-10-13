@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { Inter, Noto_Sans_SC } from "next/font/google";
-import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
+import { useAppNavigation } from "@/components/navigation/use-app-navigation";
 import homeGoose from "@/assets/home-goose-wave-v2.png";
 import packStageComplete from "@/assets/home-pack-stage-complete.svg";
 import vocabularyData from "@/data/vocabulary.json";
@@ -123,7 +123,7 @@ export function HomeDashboard({
 }: {
   requestedSessionDate?: string;
 }) {
-  const router = useRouter();
+  const { navigateForward } = useAppNavigation();
   const [session, setSession] = useState<DailySession | null>(null);
   const [checkIns, setCheckIns] = useState({ currentStreak: 0, totalCheckIns: 0 });
   const [extraMastered, setExtraMastered] = useState(0);
@@ -202,8 +202,9 @@ export function HomeDashboard({
           );
     setSessionCurrentIndex(startedSession.sessionDate, resumeIndex);
     setSession({ ...startedSession, currentIndex: resumeIndex });
-    router.push(
+    navigateForward(
       `/learn?sessionDate=${startedSession.sessionDate}&index=${resumeIndex}`,
+      { source: "home", fallback: "/" },
     );
   }
 
@@ -227,8 +228,9 @@ export function HomeDashboard({
     const resumeIndex = Math.max(0, nextIndex);
     setExtraSessionCurrentIndex(startedSession.id, resumeIndex);
     setActiveExtraSession({ ...startedSession, currentIndex: resumeIndex });
-    router.push(
+    navigateForward(
       `/learn?sessionType=extra&extraSessionId=${encodeURIComponent(startedSession.id)}&sessionDate=${encodeURIComponent(startedSession.sessionDate)}&index=${resumeIndex}`,
+      { source: "home", fallback: "/" },
     );
   }
 
@@ -299,22 +301,19 @@ export function HomeDashboard({
           <span className={styles.stageProgress}>本阶段 {stageProgress}/7</span>
         </section>
 
-        <section
-          className={`${styles.todaySection} ${packStageCompleted ? styles.todaySectionStageComplete : ""}`}
-          aria-labelledby="today-heading"
+        <div
+          className={`${styles.packArea} ${summary.status === "completed" ? styles.packAreaCompleted : ""}`}
         >
-          <div className={styles.todayHeadingRow}>
-            <span className={styles.todaySticker}>TODAY</span>
-            <h2 id="today-heading">
-              {summary.status === "completed" ? "今日计划已完成" : "今日学习"}
-            </h2>
-          </div>
-
           {packStageCompleted ? (
             <button
               type="button"
               className={styles.packStageCompletion}
-              onClick={() => router.push(`/packs/${currentPackId}`)}
+              onClick={() =>
+                navigateForward(`/packs/${currentPackId}`, {
+                  source: "home",
+                  fallback: "/",
+                })
+              }
             >
               <span className={styles.packStageCopy}>
                 <span className={styles.packStageSticker}>词包阶段完成</span>
@@ -336,9 +335,26 @@ export function HomeDashboard({
               packName={currentPack?.name ?? "IELTS 核心单词"}
               learnedWordCount={packProgress.learnedWordCount}
               totalWordCount={packProgress.totalWordCount}
-              onOpen={() => router.push(`/packs/${currentPackId}`)}
+              onOpen={() =>
+                navigateForward(`/packs/${currentPackId}`, {
+                  source: "home",
+                  fallback: "/",
+                })
+              }
             />
           )}
+        </div>
+
+        <section
+          className={`${styles.todaySection} ${packStageCompleted ? styles.todaySectionStageComplete : ""}`}
+          aria-labelledby="today-heading"
+        >
+          <div className={styles.todayHeadingRow}>
+            <span className={styles.todaySticker}>TODAY</span>
+            <h2 id="today-heading">
+              {summary.status === "completed" ? "今日计划已完成" : "今日学习"}
+            </h2>
+          </div>
 
           <div className={styles.progressSummary}>
             <strong>{summary.mastered}</strong>

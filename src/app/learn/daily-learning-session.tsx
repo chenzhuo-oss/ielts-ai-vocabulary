@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { AppLink } from "@/components/navigation/app-link";
+import { useAppNavigation } from "@/components/navigation/use-app-navigation";
 import vocabularyData from "@/data/vocabulary.json";
 import {
   getDailySession,
@@ -37,6 +38,7 @@ export function DailyLearningSession({
   extraSessionId,
 }: DailyLearningSessionProps) {
   const router = useRouter();
+  const { navigateFlowCompletion } = useAppNavigation();
   const [session, setSession] = useState<DailySession | ExtraSession | null>(null);
 
   useEffect(() => {
@@ -90,7 +92,11 @@ export function DailyLearningSession({
           completeExtraSession(extraSessionId);
         }
       } else {
-        router.replace(`/complete?sessionDate=${session.sessionDate}`);
+        navigateFlowCompletion(`/complete?sessionDate=${session.sessionDate}`, {
+          source: "learn-main",
+          fallback: "/",
+          replace: true,
+        });
       }
       return;
     }
@@ -113,13 +119,14 @@ export function DailyLearningSession({
     extraSessionId,
     requestedIndex,
     router,
+    navigateFlowCompletion,
     session,
     sessionType,
   ]);
 
   if (!session) {
     return (
-      <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 sm:px-8">
+      <main className="mx-auto min-h-dvh max-w-2xl px-5 py-10 sm:px-8">
         <p className="text-sm text-slate-500">正在恢复学习进度…</p>
       </main>
     );
@@ -141,7 +148,7 @@ export function DailyLearningSession({
       );
     }
     return (
-      <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 sm:px-8">
+      <main className="mx-auto min-h-dvh max-w-2xl px-5 py-10 sm:px-8">
         <p className="text-sm text-slate-500">正在进入今日学习完成页面…</p>
       </main>
     );
@@ -151,10 +158,10 @@ export function DailyLearningSession({
 
   if (!currentItem) {
     return (
-      <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 sm:px-8">
+      <main className="mx-auto min-h-dvh max-w-2xl px-5 py-10 sm:px-8">
         <div className="rounded-xl border border-slate-200 p-6 text-center">
           <p className="text-slate-700">当前没有可学习的任务。</p>
-          <Link href="/" className="mt-4 inline-block text-sm underline">返回首页</Link>
+          <AppLink href="/" intent="flow-exit" source={sessionType === "extra" ? "learn-extra" : "learn-main"} fallback="/" className="mt-4 inline-block text-sm underline">返回首页</AppLink>
         </div>
       </main>
     );

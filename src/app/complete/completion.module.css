@@ -5,7 +5,8 @@
   --review-yellow: #ffd12e;
   --emotion-pink: #ff78a8;
   --secondary: #4b4d47;
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: var(--surface);
   color: var(--black);
   font-family: var(--font-noto-sans-sc), sans-serif;
@@ -13,18 +14,19 @@
 
 .canvas {
   position: relative;
+  display: flex;
   width: 100%;
-  max-width: 390px;
-  min-height: max(844px, 100svh);
+  max-width: var(--page-max-width);
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: clip;
+  padding: max(28px, env(safe-area-inset-top)) var(--page-gutter) max(40px, env(safe-area-inset-bottom));
   background: var(--surface);
 }
 
 .doneSticker {
-  position: absolute;
-  top: 28px;
-  left: 20px;
   display: inline-flex;
   width: 92px;
   height: 23px;
@@ -36,12 +38,11 @@
   font-size: 11px;
   font-weight: 700;
   line-height: normal;
+  align-self: flex-start;
 }
 
 .heading {
-  position: absolute;
-  top: 72px;
-  left: 20px;
+  margin-top: 21px;
 }
 
 .heading h1,
@@ -64,20 +65,15 @@
 }
 
 .celebrationGoose {
-  position: absolute;
-  top: 131px;
-  left: 50%;
   width: 251px;
   height: 251px;
-  transform: translateX(-50%);
+  margin: 1px auto 0;
   object-fit: contain;
   pointer-events: none;
 }
 
 .masterySummary {
-  position: absolute;
-  top: 356px;
-  left: 20px;
+  margin-top: -26px;
 }
 
 .masteryValue {
@@ -130,12 +126,10 @@
 }
 
 .longTermStats {
-  position: absolute;
-  top: 508px;
-  left: 20px;
   display: grid;
-  width: calc(100% - 40px);
+  width: 100%;
   grid-template-columns: 1fr 1fr;
+  margin-top: 39px;
   border-top: 2px solid var(--black);
   padding-top: 22px;
 }
@@ -183,10 +177,8 @@
 }
 
 .backHomeButton {
-  position: absolute;
-  top: 630px;
-  left: 20px;
-  width: calc(100% - 40px);
+  width: 100%;
+  margin-top: 28px;
 }
 
 .backHomeButton img,
@@ -231,21 +223,18 @@
 }
 
 @media (max-width: 374px) {
-  .doneSticker,
-  .heading,
-  .masterySummary,
-  .longTermStats,
-  .backHomeButton {
-    left: 16px;
-  }
-
-  .longTermStats,
-  .backHomeButton {
-    width: calc(100% - 32px);
+  .canvas {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .celebrationGoose {
     width: 235px;
     height: 235px;
+    margin-top: 9px;
+  }
+
+  .masterySummary {
+    margin-top: -18px;
   }
 }

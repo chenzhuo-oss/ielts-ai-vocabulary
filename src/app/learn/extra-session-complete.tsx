@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Inter, Noto_Sans_SC } from "next/font/google";
+import { AppLink } from "@/components/navigation/app-link";
 import celebrationGoose from "@/assets/completion-goose-celebration-v1.png";
 import ctaAccent from "@/assets/completion-cta-accent.svg";
 import styles from "./daily-learning.module.css";
@@ -39,7 +39,7 @@ export function ExtraSessionComplete({
       className={`${styles.page} ${styles.extraCompletePage} ${notoSansSC.variable} ${inter.variable}`}
     >
       <div className={styles.canvas}>
-        <Link href={homeHref} className={styles.backButton} aria-label="返回首页">
+        <AppLink href={homeHref} intent="flow-completion" source="extra-completion" fallback="/" className={styles.backButton} aria-label="返回首页">
           <svg
             viewBox="0 0 18 18"
             aria-hidden="true"
@@ -52,7 +52,7 @@ export function ExtraSessionComplete({
             <path d="M16 9H2" />
             <path d="m7 3.5-5.5 5.5L7 14.5" />
           </svg>
-        </Link>
+        </AppLink>
 
         <div className={styles.progressArea}>
           <div className={styles.progressMeta} aria-label="本组已掌握进度">
@@ -87,10 +87,10 @@ export function ExtraSessionComplete({
           <p className={styles.extraCompleteHelper}>今天又多认识了一些词。</p>
         </section>
 
-        <Link href={homeHref} className={styles.extraCompleteCta}>
+        <AppLink href={homeHref} intent="flow-completion" source="extra-completion" fallback="/" className={styles.extraCompleteCta}>
           <Image src={ctaAccent} alt="" aria-hidden="true" />
           <span>返回首页</span>
-        </Link>
+        </AppLink>
       </div>
     </main>
   );

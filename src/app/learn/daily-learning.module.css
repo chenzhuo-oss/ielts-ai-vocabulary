@@ -6,7 +6,8 @@
   --review-yellow: #ffd12e;
   --review-yellow-soft: rgba(255, 209, 46, 0.38);
   --secondary: #4b4d47;
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: var(--surface);
   color: var(--black);
   font-family: var(--font-noto-sans-sc), sans-serif;
@@ -15,10 +16,11 @@
 .canvas {
   position: relative;
   width: 100%;
-  max-width: 390px;
-  min-height: max(844px, 100svh);
+  max-width: var(--page-max-width);
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: clip;
   background: var(--surface);
 }
 
@@ -295,6 +297,96 @@
   opacity: 0.65;
 }
 
+.exitModalOverlay {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(17, 18, 15, 0.36);
+}
+
+.exitModal {
+  display: flex;
+  width: 300px;
+  max-width: calc(100vw - 32px);
+  height: 280px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    #eaf3ff 0,
+    #f4f7ff 72px,
+    var(--surface) 122px,
+    var(--surface) 100%
+  );
+  box-shadow: 0 16px 48px rgba(17, 18, 15, 0.16);
+  padding: 12px 18px 14px;
+  text-align: center;
+}
+
+.exitModalGoose {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.exitModalTitle {
+  margin: 8px 0 0;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.exitModalDescription {
+  margin: 6px 0 0;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.exitModalActions {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.exitModalSecondaryButton,
+.exitModalPrimaryButton {
+  height: 50px;
+  border-radius: 17px;
+  font-family: var(--font-noto-sans-sc), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.exitModalSecondaryButton {
+  border: 1.5px solid var(--black);
+  background: var(--surface);
+  color: var(--black);
+}
+
+.exitModalPrimaryButton {
+  border: 1.5px solid var(--black);
+  background: var(--black);
+  color: #fff;
+}
+
+.exitModalSecondaryButton:focus-visible,
+.exitModalPrimaryButton:focus-visible {
+  outline: 2px solid var(--black);
+  outline-offset: 3px;
+}
+
 .extraCompleteGoose {
   position: absolute;
   top: 131px;
@@ -416,10 +508,6 @@
 }
 
 @media (max-height: 743px) {
-  .canvas {
-    min-height: max(720px, 100svh);
-  }
-
   .wordArea {
     top: 156px;
   }

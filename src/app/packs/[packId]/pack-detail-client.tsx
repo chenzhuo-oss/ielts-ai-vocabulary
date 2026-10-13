@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import { useEffect, useState } from "react";
+import { AppLink } from "@/components/navigation/app-link";
 import backIcon from "@/assets/figma-back-icon.svg";
 import chevronDark from "@/assets/figma-chevron-dark.svg";
 import chevronLight from "@/assets/figma-chevron-light.svg";
@@ -39,14 +39,14 @@ export function PackDetailClient({ packId }: { packId: string }) {
     return () => window.clearTimeout(timer);
   }, [packId]);
 
-  if (!pack) return <main className={styles.notFound}><h1>未找到该词包</h1><Link href="/">返回首页</Link></main>;
+  if (!pack) return <main className={styles.notFound}><h1>未找到该词包</h1><AppLink href="/" intent="back" source="pack-detail" fallback="/">返回首页</AppLink></main>;
 
   const planConfig = INTENSITY_OPTIONS[plan];
   return (
     <main className={`${styles.page} ${noto.variable} ${inter.variable}`}>
       <div className={styles.canvas}>
         <header className={styles.pageHeader}>
-          <Link href="/" className={styles.backButton} aria-label="返回首页"><Image src={backIcon} alt="" /></Link>
+          <AppLink href="/" intent="back" source="pack-detail" fallback="/" className={styles.backButton} aria-label="返回首页"><Image src={backIcon} alt="" /></AppLink>
         </header>
 
         <section className={styles.packHero}>
@@ -63,10 +63,10 @@ export function PackDetailClient({ packId }: { packId: string }) {
         </section>
 
         <section className={styles.vocabularyEntry}>
-          <Link href={`/packs/${pack.id}/words`}>
+          <AppLink href={`/packs/${pack.id}/words`} intent="forward" source="pack-detail" fallback="/">
             <span><strong>查看词表</strong><small>{pack.totalWordCount} 个单词</small></span>
             <span className={styles.entryArrow}><Image src={chevronLight} alt="" /></span>
-          </Link>
+          </AppLink>
         </section>
 
         <section className={styles.otherPacks}>

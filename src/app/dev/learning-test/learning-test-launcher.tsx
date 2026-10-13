@@ -22,7 +22,7 @@ export function LearningTestLauncher() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-xl px-5 py-12 sm:px-8">
+    <main className="mx-auto min-h-dvh max-w-xl px-5 py-12 sm:px-8">
       <section className="rounded-2xl border border-dashed border-slate-400 bg-white p-7 shadow-sm">
         <p className="text-xs font-semibold uppercase tracking-wider text-amber-700">
           Development only
