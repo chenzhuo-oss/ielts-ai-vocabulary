@@ -490,7 +490,21 @@
   .packStageIcon { width: 40px; }
 }
 
-@media (min-width: 430px) {
+@media (max-width: 767px) {
+  .page {
+    padding: 0;
+    background: var(--surface);
+  }
+
+  .canvas {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .page {
     background: var(--warm-white);
     padding: 24px 0;

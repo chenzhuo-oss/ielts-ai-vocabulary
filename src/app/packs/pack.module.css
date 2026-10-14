@@ -38,3 +38,4 @@
 .planNote{margin:16px 0 0;border-radius:15px;background:rgba(255,209,46,.16);padding:14px 16px;color:var(--secondary);font-size:11px;line-height:17px}.savePlan{display:flex;width:100%;height:58px;align-items:center;justify-content:center;gap:12px;margin-top:64px;border:0;border-radius:19px;background:var(--black);color:#fff;font:700 15px var(--font-noto-sans-sc),sans-serif}.savePlan span{width:10px;height:10px;border-radius:50%;background:var(--yellow)}
 .notFound{max-width:var(--page-max-width);min-height:100vh;min-height:100dvh;margin:0 auto;padding:48px var(--page-gutter)}.notFound h1{font-size:20px}
 @media(max-width:359px){.canvas{padding-right:16px;padding-left:16px}}
+@media(max-width:767px){.canvas{width:100%;max-width:none;margin:0;border-radius:0}}

@@ -21,3 +21,4 @@
 @media(prefers-reduced-motion:reduce){.typingDots i{animation:none;opacity:.45;transform:none}.typingDots i:nth-child(2){opacity:.65}.typingDots i:nth-child(3){opacity:.85}}
 @media(max-height:720px){.hero{height:268px}.heroCopy{top:86px}.heroCopy p{margin-top:10px}.contentSurface{margin-top:-49px}}
 @media(max-width:389px){.hero,.contentSurface,.topBar,.contextBar{width:100%}.context{right:20px;width:auto}.userMessage{margin-left:auto}.replyRow{width:100%}.replyCard{width:calc(100% - 56px)}.composerArea{padding-right:16px;padding-left:16px}.disabledComposer{width:100%}}
+@media(max-width:767px){.page{height:100vh;height:100dvh;min-height:0;overflow:hidden;background:var(--surface)}.canvas{width:100%;max-width:none;margin:0;border-radius:0}.hero,.contentSurface,.topBar,.contextBar{width:100%}.heroArtwork{width:calc(100% + 21px);object-fit:cover}.context{right:20px;width:auto}}

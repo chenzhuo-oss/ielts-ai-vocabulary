@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NavigationProvider } from "@/components/navigation/navigation-provider";
 import { NavigationShell } from "@/components/navigation/navigation-shell";
 import "./globals.css";
@@ -6,6 +6,22 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "IELTS AI Vocabulary",
   description: "IELTS vocabulary learning application",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "IELTS AI",
+  },
+  icons: {
+    apple: "/apple-icon.png",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#f8f4ea",
 };
 
 export default function RootLayout({

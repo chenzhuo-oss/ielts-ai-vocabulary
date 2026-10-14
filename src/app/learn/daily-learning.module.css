@@ -507,6 +507,15 @@
   }
 }
 
+@media (max-width: 767px) {
+  .canvas {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
 @media (max-height: 743px) {
   .wordArea {
     top: 156px;

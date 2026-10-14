@@ -1,6 +1,10 @@
 import { Inter, Noto_Sans_SC } from "next/font/google";
+import Image from "next/image";
 import { AppLink } from "@/components/navigation/app-link";
+import aiCtaAccent from "@/assets/word-detail-ai-cta-accent.svg";
+import aiGoose from "@/assets/word-detail-ai-goose-v2.png";
 import vocabularyData from "@/data/vocabulary.json";
+import { getSynonymContext } from "@/lib/ai/synonym-comparison";
 import { ExampleSentences } from "./example-sentences";
 import { WordDetailHeader } from "./word-detail-header";
 import { WordLearningControls } from "./word-learning-controls";
@@ -78,6 +82,7 @@ export default async function WordDetailPage({ params, searchParams }: WordDetai
   const detailQueryString = detailQuery.toString();
   const returnTo = `/words/${encodeURIComponent(wordEntry.word)}${detailQueryString ? `?${detailQueryString}` : ""}`;
   const aiQuery = new URLSearchParams({ word: wordEntry.word, returnTo });
+  const synonymGroupWords = getSynonymContext(wordEntry.word).comparisonWords;
   const backHref = browseMode
     ? `/packs/${encodeURIComponent(packId!)}/words${restoreScroll === "1" ? "?restoreScroll=1" : ""}`
     : sessionDate
@@ -141,9 +146,15 @@ export default async function WordDetailPage({ params, searchParams }: WordDetai
                 aria-label={`使用 AI 学习助手辨析 ${wordEntry.word} 的近义词`}
               >
                 <div className={styles.aiHeading}><span>AI</span><h3>AI 近义词辨析</h3></div>
-                <p>比较 {wordEntry.synonyms.slice(0, 3).join("、")} 的语气和使用场景。</p>
-                <span className={styles.aiStatus}>进入助手</span>
-                <span className={styles.aiEntryArrow} aria-hidden="true">→</span>
+                <div className={styles.aiSynonymGroup} lang="en">
+                  {synonymGroupWords.join(" · ")}
+                </div>
+                <p className={styles.aiDescription}>查看这些词的用法差异与互换边界</p>
+                <span className={styles.aiStatus}>
+                  <Image className={styles.aiCtaAccent} src={aiCtaAccent} alt="" aria-hidden="true" />
+                  <span>进入助手</span>
+                </span>
+                <Image className={styles.aiGoose} src={aiGoose} alt="" aria-hidden="true" priority />
               </AppLink>
             </section>
           </div>
