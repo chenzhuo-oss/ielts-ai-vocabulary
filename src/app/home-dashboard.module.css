@@ -497,15 +497,34 @@
   }
 
   .canvas {
+    display: flex;
     width: 100%;
     max-width: none;
+    flex-direction: column;
     margin: 0;
     border-radius: 0;
     padding-top: 24px;
   }
 
+  .welcome,
+  .packArea {
+    flex: none;
+  }
+
   .streakCard {
     top: 211px;
+  }
+
+  .todaySection {
+    display: flex;
+    min-height: 322px;
+    flex: 1 0 322px;
+    flex-direction: column;
+    margin-bottom: calc(env(safe-area-inset-bottom) + 16px);
+  }
+
+  .primaryCta {
+    margin-top: auto;
   }
 }
 
