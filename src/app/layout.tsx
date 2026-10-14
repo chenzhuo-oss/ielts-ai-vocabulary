@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
-    title: "IELTS AI",
+    statusBarStyle: "black-translucent",
+    title: "HERO记单词",
   },
   icons: {
     apple: "/apple-icon.png",

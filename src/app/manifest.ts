@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "IELTS AI Vocabulary",
-    short_name: "IELTS AI",
+    name: "HERO记单词",
+    short_name: "HERO记单词",
     description: "IELTS vocabulary learning application",
     start_url: "/",
     scope: "/",
